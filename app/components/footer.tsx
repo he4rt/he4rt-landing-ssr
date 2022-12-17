@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { GenIcon } from "react-icons";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
