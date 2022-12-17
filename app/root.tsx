@@ -14,7 +14,7 @@ import favicon from "../public/favicon.svg";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "He4rt Learning",
+  title: "He4rt Developers",
   viewport: "width=device-width,initial-scale=1",
 });
 
