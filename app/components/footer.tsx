@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { GenIcon } from "react-icons";
 import {
   AiOutlineInstagram,
   AiOutlineTwitter,
@@ -31,7 +32,7 @@ const anchorLinks: Omit<LinkProps, "isIcon">[] = [
 
 const socialMediaLinks: LinkProps[] = [
   {
-    href: "https://www.instagram.com/heartdevs/",
+    href: "https://www.instagram.com/heartdevs",
     children: (
       <AiOutlineInstagram
         size={24}
@@ -82,8 +83,8 @@ const socialMediaLinks: LinkProps[] = [
 
 const FooterLink = ({
   children,
-  isIcon,
   target = "_self",
+  isIcon,
   ...props
 }: LinkProps) => {
   const iconClass = "scroll-bottom-2 mx-5";
@@ -93,7 +94,7 @@ const FooterLink = ({
     <a
       target={target}
       rel="noopener noreferrer"
-      className={clsx(!isIcon && textClass, iconClass)}
+      className={clsx(!isIcon ? textClass : iconClass)}
       {...props}
     >
       {children}
