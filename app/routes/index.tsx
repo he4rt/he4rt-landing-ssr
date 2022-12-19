@@ -1,7 +1,68 @@
+import type { LinksFunction } from '@remix-run/node';
 import Footer from '~/components/Footer';
 import UserCard from '~/components/UserCard';
 
 import { users } from '~/mocks/users';
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/daniel.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/gustavo.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/pride.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/julia.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/7k.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/novout.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/m7.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/nadachi.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/nextur.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/grande.png',
+    },
+    {
+      rel: 'prefetch',
+      as: 'image',
+      href: '/images/staff/yaya.png',
+    },
+  ];
+};
 
 export default function Index() {
   return (
