@@ -28,7 +28,7 @@ export const links: LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap",
     crossOrigin: "anonymous",
   },
   {
@@ -45,7 +45,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="w-screen h-screen dark:bg-gray-999 font-spline">
+      <body className="h-screen dark:bg-gray-999 font-spline">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
