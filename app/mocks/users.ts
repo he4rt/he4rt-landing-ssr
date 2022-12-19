@@ -63,7 +63,7 @@ export const users: UserCardProps[] = [
   },
   {
     username: "Yasmin Felício",
-    avatar: "https://i.imgur.com/4yOwyk1.png",
+    avatar: "https://i.imgur.com/FeELKKB.png",
     occupation: "Community Manager",
     twitter: "https://twitter.com/yayaflc",
   },
