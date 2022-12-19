@@ -10,8 +10,6 @@ import {
 
 import styles from '~/tailwind.css';
 
-import favicon from '../public/favicon.svg';
-
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
   title: 'He4rt Developers',
@@ -28,12 +26,12 @@ export const links: LinksFunction = () => [
   },
   {
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&display=swap',
+    href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&family=Spline+Sans:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap',
     crossOrigin: 'anonymous',
   },
   {
     rel: 'icon',
-    href: favicon,
+    href: '/images/brands/heart.svg',
     type: 'image/svg',
   },
 ];
@@ -45,7 +43,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className='w-screen h-screen dark:bg-gray-999 font-spline'>
+      <body className='h-screen dark:bg-gray-999 font-spline'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
