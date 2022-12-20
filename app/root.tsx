@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node"
 import {
   Links,
   LiveReload,
@@ -6,17 +6,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from "@remix-run/react"
 
-import styles from "~/tailwind.css";
+import styles from "~/tailwind.css"
 
-import favicon from "../public/favicon.svg";
+import favicon from "../public/favicon.svg"
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "He4rt Developers",
   viewport: "width=device-width,initial-scale=1",
-});
+})
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -36,7 +36,7 @@ export const links: LinksFunction = () => [
     href: favicon,
     type: "image/svg",
   },
-];
+]
 
 export default function App() {
   return (
@@ -45,12 +45,12 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="w-screen h-screen dark:bg-gray-999 font-spline">
+      <body className="h-screen dark:bg-gray-999 font-spline">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
       </body>
     </html>
-  );
+  )
 }
