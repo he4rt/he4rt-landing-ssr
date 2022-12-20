@@ -28,8 +28,16 @@ export default function About() {
           Como posso me juntar a <span className='text-purple-500'>He4rt?</span>
         </h3>
         <p className='font-dm font-medium text-lg text-gray-750'>
-          Faça parte do nosso <span className='text-purple-500'>Discord</span> e
-          contribua com diversos projetos que podem mudar a maneira como as
+          Faça parte do nosso{' '}
+          <a
+            href='https://discord.gg/he4rt'
+            target='_blank'
+            className='text-purple-500'
+            rel='noreferrer noopener'
+          >
+            Discord
+          </a>{' '}
+          e contribua com diversos projetos que podem mudar a maneira como as
           pessoas aprendem ao redor do mundo.{' '}
           <span className='text-purple-500'>
             Acompanhe a He4rt nas redes sociais
