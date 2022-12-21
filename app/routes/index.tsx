@@ -1,10 +1,10 @@
-import FindAtHe4rt from '~/components/FindAtHe4rt';
+import FindAtHe4rtSection from '~/components/FindAtHe4rtSection';
 import Footer from '~/components/Footer';
 
 export default function Index() {
   return (
     <>
-      <FindAtHe4rt />
+      <FindAtHe4rtSection />
       <Footer />
     </>
   );
