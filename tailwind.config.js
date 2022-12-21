@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./app/**/*.{ts,tsx,jsx,js}'],
-  darkMode: 'class',
+  content: ["./app/**/*.{ts,tsx,jsx,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         purple: {
-          99: '#F5EDFF',
-          100: '#F1E9FF',
-          400: '#481990',
-          450: '#b755ff',
-          500: '#782BF1',
-          700: '#7E22CE',
+          99: "#F5EDFF",
+          100: "#F1E9FF",
+          400: "#481990",
+          450: "#b755ff",
+          500: "#782BF1",
+          700: "#7E22CE",
         },
         gray: {
           100: '#171717',
@@ -34,17 +34,17 @@ module.exports = {
           1000: '#0F0F11',
         },
         blue: {
-          100: '#2B92F1',
-          99: '#2B3342',
-          700: '#1B2333',
-          800: '#202020',
-          900: '#111225',
+          100: "#2B92F1",
+          99: "#2B3342",
+          700: "#1B2333",
+          800: "#202020",
+          900: "#111225",
         },
         pink: {
-          500: '#F1E9FF',
-          700: '#C92BF1',
+          500: "#F1E9FF",
+          700: "#C92BF1",
         },
-        green: '#2BF162',
+        green: "#2BF162",
       },
       container: {
         center: true,
