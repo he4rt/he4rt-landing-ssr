@@ -1,5 +1,6 @@
 import type { LinksFunction } from '@remix-run/node';
 import Footer from '~/components/Footer';
+import He4rt from '~/components/He4rt';
 import UserCard from '~/components/UserCard';
 
 import { users } from '~/mocks/users';
@@ -67,6 +68,7 @@ export const links: LinksFunction = () => {
 export default function Index() {
   return (
     <>
+      <He4rt />
       <div className='container mx-auto py-40'>
         <h3 className='font-sans font-bold text-4xl text-gray-700 text-center mb-2'>
           Venha conhecer a equipe da{' '}

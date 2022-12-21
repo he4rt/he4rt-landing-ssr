@@ -43,7 +43,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className='h-screen dark:bg-gray-999 font-spline'>
+      <body className='h-screen dark:bg-gray-999 font-spline overflow-x-hidden'>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
