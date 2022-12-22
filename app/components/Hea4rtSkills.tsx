@@ -1,14 +1,11 @@
 import { SlGraduation } from 'react-icons/sl';
 
-export type FindAtHe4rtProps = {
+export type SkillsProps = {
   title: string;
   description: string;
 };
 
-export default function FindAtHe4rtTopic({
-  title,
-  description,
-}: FindAtHe4rtProps) {
+export default function Hea4rtSkills({ title, description }: SkillsProps) {
   return (
     <div className='max-w-xl lg:max-w-sm'>
       <div className='flex gap-3 items-center'>

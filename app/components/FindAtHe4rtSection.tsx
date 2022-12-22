@@ -1,10 +1,10 @@
 import type { LinksFunction } from '@remix-run/node';
-import FindAtHe4rtTopic from '~/components/FindAtHe4rtTopic';
-import type { FindAtHe4rtProps } from '~/components/FindAtHe4rtTopic';
+import Hea4rtSkills from '~/components/Hea4rtSkills';
+import type { SkillsProps } from '~/components/Hea4rtSkills';
 import UserCard from '~/components/UserCard';
 import { users } from '~/mocks/users';
 
-const findAtHe4rtTopics: FindAtHe4rtProps[] = [
+const Skills: SkillsProps[] = [
   {
     title: 'Desenvolvendo Habilidades',
     description:
@@ -71,8 +71,8 @@ export default function FindAtHe4rt() {
         </div>
         <div className='flex justify-between flex-col md:flex-row'>
           <div className='flex flex-col gap-10'>
-            {findAtHe4rtTopics.map((topic) => (
-              <FindAtHe4rtTopic key={topic.title} {...topic} />
+            {Skills.map((topic) => (
+              <Hea4rtSkills key={topic.title} {...topic} />
             ))}
           </div>
           <div className='bg-gradient-to-r h-fit from-[#782BF1] to-[#A62BF1] mt-10 md:mt-0 py-10 rounded-xl md:rounded-l-xl px-10 md:relative -right-36'>
