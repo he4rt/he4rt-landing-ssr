@@ -1,6 +1,6 @@
 import type { LinksFunction } from '@remix-run/node';
-import Hea4rtSkills from '~/components/Hea4rtSkills';
-import type { SkillsProps } from '~/components/Hea4rtSkills';
+import He4rtSkills from '~/components/He4rtSkills';
+import type { SkillsProps } from '~/components/He4rtSkills';
 import UserCard from '~/components/UserCard';
 import { users } from '~/mocks/users';
 
@@ -72,7 +72,7 @@ export default function FindAtHe4rt() {
         <div className='flex justify-between flex-col md:flex-row'>
           <div className='flex flex-col gap-10'>
             {Skills.map((topic) => (
-              <Hea4rtSkills key={topic.title} {...topic} />
+              <He4rtSkills key={topic.title} {...topic} />
             ))}
           </div>
           <div className='bg-gradient-to-r h-fit from-[#782BF1] to-[#A62BF1] mt-10 md:mt-0 py-10 rounded-xl md:rounded-l-xl px-10 md:relative -right-36'>

@@ -5,7 +5,7 @@ export type SkillsProps = {
   description: string;
 };
 
-export default function Hea4rtSkills({ title, description }: SkillsProps) {
+export default function He4rtSkills({ title, description }: SkillsProps) {
   return (
     <div className='max-w-xl lg:max-w-sm'>
       <div className='flex gap-3 items-center'>
