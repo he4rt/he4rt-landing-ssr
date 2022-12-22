@@ -13,13 +13,9 @@ export default function FindAtHe4rtTopic({
     <div className='max-w-xl lg:max-w-sm'>
       <div className='flex gap-3 items-center'>
         <SlGraduation
+          className='rounded-full p-3 bg-purple-500/[0.1]'
           color='#782BF1'
           size={40}
-          style={{
-            background: 'rgba(120, 43, 241, 0.1)',
-            borderRadius: '50%',
-            padding: 10,
-          }}
         />
         <h3 className='font-semibold text-[#424141] font-spline text-xl'>
           {title}
