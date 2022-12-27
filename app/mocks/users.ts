@@ -1,4 +1,4 @@
-import type { UserCardProps } from '~/components/UserCard';
+import type { UserCardProps } from '~/components/Staff';
 
 export const users: UserCardProps[] = [
   {
