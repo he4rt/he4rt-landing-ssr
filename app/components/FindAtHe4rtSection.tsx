@@ -1,8 +1,7 @@
 import type { LinksFunction } from '@remix-run/node';
 import He4rtSkills from '~/components/He4rtSkills';
 import type { SkillsProps } from '~/components/He4rtSkills';
-import UserCard from '~/components/UserCard';
-import { users } from '~/mocks/users';
+import Container from '~/components/Container';
 
 const Skills: SkillsProps[] = [
   {
@@ -41,7 +40,7 @@ export const links: LinksFunction = () => {
 export default function FindAtHe4rt() {
   return (
     <>
-      <div className='container mx-auto py-40 px-10'>
+      <Container>
         <div className='mb-10'>
           <h2 className='text-gray-700 font-bold text-2xl'>
             O que eu encontrarei na{' '}
@@ -79,7 +78,7 @@ export default function FindAtHe4rt() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }

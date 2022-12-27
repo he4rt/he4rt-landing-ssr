@@ -6,6 +6,8 @@ import Footer from '~/components/Footer';
 import He4rt from '~/components/He4rt';
 import Staff from '~/components/Staff';
 
+import ForNoobs from '~/components/ForNoobs';
+import Container from '~/components/Container';
 export const links: LinksFunction = () => {
   return [
     {
@@ -20,11 +22,10 @@ export default function Index() {
   return (
     <>
       <He4rt />
-      <div className='container mx-auto py-40 px-10'>
-        <About />
-        <FindAtHe4rtSection />
-        <Staff />
-      </div>
+      <About />
+      <ForNoobs />
+      <FindAtHe4rtSection />
+      <Staff />
       <Footer />
     </>
   );
