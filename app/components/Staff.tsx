@@ -1,5 +1,6 @@
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { users } from '~/mocks/users';
+import Container from '~/components/Container';
 
 export type UserCardProps = {
   avatar: string;
@@ -36,7 +37,7 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
 
 export default function Staff() {
   return (
-    <>
+    <Container>
       <h3 className='font-sans font-bold text-4xl text-gray-700 md:text-center mb-2'>
         Venha conhecer a equipe da{' '}
         <span className='text-purple-500'>He4rt Devs.</span>
@@ -51,6 +52,6 @@ export default function Staff() {
           <UserCard key={`user-key-${user.username}`} {...user} />
         ))}
       </div>
-    </>
+    </Container>
   );
 }

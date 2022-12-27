@@ -39,7 +39,7 @@ export default function He4rt() {
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
-        className='absolute top-0 right-0 max-w-[65%] w-full'
+        className='absolute top-0 right-0 max-w-[50%] w-full'
       />
     </>
   );
