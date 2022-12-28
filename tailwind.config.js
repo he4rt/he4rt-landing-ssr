@@ -4,6 +4,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage: {
+        '4noobs-pattern':
+          'linear-gradient(270deg, #792CF2 50%, rgba(121, 44, 242, 0) 100%), url(/images/4noobs-bg.png)',
+      },
       colors: {
         purple: {
           99: '#F5EDFF',

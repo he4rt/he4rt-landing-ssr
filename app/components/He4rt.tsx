@@ -6,7 +6,7 @@ export default function He4rt() {
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
-        className='absolute top-0 right-0 max-w-[65%] w-full'
+        className='absolute top-0 right-0 max-w-[50%] w-full'
       />
       <header
         className='flex flex-col lg:flex-row container w-full mx-auto justify-between items-center relative gap-6 px-10 py-24 lg:py-[196px]'
