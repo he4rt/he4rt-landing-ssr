@@ -18,8 +18,8 @@ const Projects = () => {
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 8000,
     cssEase: 'linear',
     responsive: [
       {
