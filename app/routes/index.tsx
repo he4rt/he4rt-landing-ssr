@@ -20,7 +20,7 @@ export default function Index() {
   return (
     <>
       <He4rt />
-      <div className='container mx-auto py-40 px-10'>
+      <div className='container mx-auto pb-40 px-10'>
         <About />
         <FindAtHe4rtSection />
         <Staff />
