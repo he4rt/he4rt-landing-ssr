@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .slick-list,
+  .slick-slider {
+    @apply relative block;
+  }
+
+  .slick-list {
+    @apply overflow-hidden m-0 p-0;
+  }
+
+  .slick-slide {
+    @apply block float-left h-fit;
+  }
+
+  .slick-arrow {
+    @apply absolute -bottom-8 text-[0px] leading-[0px] w-8 h-8 z-10 block;
+  }
+
+  .slick-prev {
+    @apply left-1/3 lg:left-[50%] transform rotate-180;
+  }
+
+  .slick-next {
+    @apply right-1/3 left-[unset] lg:left-[60%] lg:right-[unset];
+  }
+
+  .slick-arrow::before {
+    @apply text-4xl text-black w-[6px] h-[10px] block left-1/2 top-1/2 absolute transform -translate-x-1/2 -translate-y-1/2;
+    content: ' ';
+    background: url('/assets/icons/arrow-right.svg') center center no-repeat;
+  }
+}
