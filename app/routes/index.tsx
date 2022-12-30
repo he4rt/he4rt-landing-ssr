@@ -4,6 +4,7 @@ import About from '~/components/About';
 import FindAtHe4rtSection from '~/components/FindAtHe4rtSection';
 import Footer from '~/components/Footer';
 import He4rt from '~/components/He4rt';
+import OurPartners from '~/components/OurPartners';
 import SectionRecords from '~/components/SectionRecords';
 import Staff from '~/components/Staff';
 
@@ -28,6 +29,7 @@ export default function Index() {
       <FindAtHe4rtSection />
       <Staff />
       <SectionRecords />
+      <OurPartners />
       <Footer />
     </>
   );
