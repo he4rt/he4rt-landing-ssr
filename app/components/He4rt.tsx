@@ -6,14 +6,14 @@ export default function He4rt() {
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
-        className='absolute top-0 right-0 max-w-[50%] w-full'
+        className='absolute top-0 right-0 w-full max-w-[50%]'
       />
       <header
-        className='flex flex-col lg:flex-row container w-full mx-auto justify-between items-center relative gap-6 px-10 py-24 lg:py-[196px]'
+        className='container relative mx-auto flex w-full flex-col items-center justify-between gap-6 px-10 py-24 lg:flex-row lg:py-[196px]'
         id='inicio'
       >
-        <div className='flex flex-col w-full lg:w-1/2 lg:max-w-[544px]'>
-          <h1 className='text-[#424141] font-bold tracking-[-0.02em] text-[36px] leading-[43px]'>
+        <div className='flex w-full flex-col lg:w-1/2 lg:max-w-[544px]'>
+          <h1 className='text-[36px] font-bold leading-[43px] tracking-[-0.02em] text-[#424141]'>
             Feito pela{' '}
             <span className='text-purple-500 dark:text-purple-700'>
               comunidade{' '}
@@ -23,10 +23,10 @@ export default function He4rt() {
               comunidade
             </span>
           </h1>
-          <p className='w-full text-gray-750 mt-4 text-[20px] leading-[30px] tracking-[-0.02em]'>
+          <p className='mt-4 w-full text-[20px] leading-[30px] tracking-[-0.02em] text-gray-750'>
             Aqui é o lugar aonde mentes extraordinárias se encontram com o
             objetivo de alcançar milhares de pessoas com o poder da tecnologia.{' '}
-            <span className='text-purple-500 dark:text-purple-700 font-semibold'>
+            <span className='font-semibold text-purple-500 dark:text-purple-700'>
               Aqui mais do que participar, você vai contribuir.
             </span>
           </p>
@@ -36,13 +36,13 @@ export default function He4rt() {
               href='https://discord.com/invite/5kwDQuv'
               target='_blank'
             >
-              <button className='bg-transparent border-2 border-purple-500 dark:border-purple-700 rounded-lg px-4 py-2 font-bold text-purple-500 dark:text-purple-700 dark:hover:text-gray-998 dark:hover:bg-purple-700 hover:bg-purple-500 hover:text-white transition-all'>
+              <button className='rounded-lg border-2 border-purple-500 bg-transparent px-4 py-2 font-bold text-purple-500 transition-all hover:bg-purple-500 hover:text-white dark:border-purple-700 dark:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-gray-998'>
                 Seja um membro
               </button>
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-full lg:w-1/2'>
+        <div className='flex w-full flex-col lg:w-1/2'>
           {/* slider */}
           <Projects />
         </div>

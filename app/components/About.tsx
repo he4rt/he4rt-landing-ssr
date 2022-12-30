@@ -3,18 +3,18 @@ import Container from '~/components/Container';
 export default function About() {
   return (
     <Container>
-      <div className='md:flex md:row md:items-center mb-14 md:mb-40'>
+      <div className='md:row mb-14 md:mb-40 md:flex md:items-center'>
         <img
           src='/images/question.png'
           alt='Imagem ilustrativa de uma pessoa pensando'
-          className='md:mr-8 mb-4'
+          className='mb-4 md:mr-8'
         />
         <div className='flex flex-col'>
-          <h2 className='font-sans font-bold text-4xl text-gray-700 md:mb-2 mb-4'>
+          <h2 className='mb-4 font-sans text-4xl font-bold text-gray-700 md:mb-2'>
             Afinal, o que é a{' '}
             <span className='text-purple-500'>He4rt Developers?</span>
           </h2>
-          <p className='font-dm font-medium text-lg text-gray-750 mb-9'>
+          <p className='mb-9 font-dm text-lg font-medium text-gray-750'>
             Temos como filosofia o ensino, tecnologia e as pessoas.{' '}
             <span className='text-purple-500'>
               Acreditamos que quando alinhados conseguimos mudar o mundo
@@ -25,11 +25,11 @@ export default function About() {
               Ajude a moldar nossa comunidade: faça parte dela.
             </span>
           </p>
-          <h3 className='font-sans font-bold text-2xl text-gray-700 mb-2'>
+          <h3 className='mb-2 font-sans text-2xl font-bold text-gray-700'>
             Como posso me juntar a{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h3>
-          <p className='font-dm font-medium text-lg text-gray-750'>
+          <p className='font-dm text-lg font-medium text-gray-750'>
             Faça parte do nosso{' '}
             <a
               href='https://discord.gg/he4rt'

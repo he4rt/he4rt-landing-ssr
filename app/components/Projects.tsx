@@ -47,24 +47,24 @@ const Projects = () => {
       <Slider {...settings}>
         {data.projects.map((project) => (
           <div key={project.username}>
-            <div className='rounded-lg overflow-hidden shadow-md flex flex-col flex-1 m-4'>
-              <div className='flex flex-row flex-1 gap-4 items-center justify-center p-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] text-white'>
+            <div className='m-4 flex flex-1 flex-col overflow-hidden rounded-lg shadow-md'>
+              <div className='flex flex-1 flex-row items-center justify-center gap-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] p-4 text-white'>
                 <img
                   src={project.avatar}
                   alt='Avatar do usuário'
-                  className='w-8 h-8 rounded-full shadow-md'
+                  className='h-8 w-8 rounded-full shadow-md'
                 />
 
-                <div className='flex flex-col w-32'>
+                <div className='flex w-32 flex-col'>
                   <p className='text-xs font-bold'>{project.username}</p>
                   <p className='text-xs'>{project.github}</p>
                 </div>
               </div>
 
-              <div className='flex flex-col flex-1 p-4 bg-white'>
-                <p className='text-sm text-[#782BF1] font-bold'>
+              <div className='flex flex-1 flex-col bg-white p-4'>
+                <p className='text-sm font-bold text-[#782BF1]'>
                   4Noobs{' '}
-                  <span className='text-[#424141] font-normal'>
+                  <span className='font-normal text-[#424141]'>
                     - {project.projectTitle}
                   </span>
                 </p>
@@ -72,9 +72,9 @@ const Projects = () => {
                   {project.projectCategory}
                 </p>
 
-                <span className='flex w-full border-t boder-[#F1E9FF] mt-2' />
+                <span className='boder-[#F1E9FF] mt-2 flex w-full border-t' />
 
-                <p className='w-full text-xs font-normal text-[#8C8B8E] mt-2'>
+                <p className='mt-2 w-full text-xs font-normal text-[#8C8B8E]'>
                   {project.projectDescription}
                 </p>
               </div>
@@ -83,7 +83,7 @@ const Projects = () => {
                 href={project.projectUrl}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex flex-col flex-1 text-center bg-purple-500 hover:bg-purple-600 text-white font-bold py-1 transition-all'
+                className='flex flex-1 flex-col bg-purple-500 py-1 text-center font-bold text-white transition-all hover:bg-purple-600'
               >
                 Acessar
               </a>

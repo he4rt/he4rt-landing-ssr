@@ -14,14 +14,14 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
     <img
       src={avatar}
       alt={`Avatar do ${username}`}
-      className='rounded-xl mb-2.5 max-h-60 h-60 w-60 object-cover'
+      className='mb-2.5 h-60 max-h-60 w-60 rounded-xl object-cover'
     />
     <div className='flex justify-between'>
       <div>
-        <p className='font-spline font-bold text-xl text-gray-950'>
+        <p className='font-spline text-xl font-bold text-gray-950'>
           {username}
         </p>
-        <span className='text-gray-650 font-dm text-base'>{occupation}</span>
+        <span className='font-dm text-base text-gray-650'>{occupation}</span>
       </div>
       <a
         href={twitter}
@@ -38,16 +38,16 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
 export default function Staff() {
   return (
     <Container>
-      <h3 className='font-sans font-bold text-4xl text-gray-700 md:text-center mb-2'>
+      <h3 className='mb-2 font-sans text-4xl font-bold text-gray-700 md:text-center'>
         Venha conhecer a equipe da{' '}
         <span className='text-purple-500'>He4rt Devs.</span>
       </h3>
-      <p className='font-sans text-xl	font-normal text-gray-750 md:text-center mb-12 max-w-4xl mx-auto'>
+      <p className='mx-auto mb-12	max-w-4xl font-sans text-xl font-normal text-gray-750 md:text-center'>
         Nós temos os recursos para levar qualquer ideia para frente, nenhum
         sonho é louco demais para nós. Descubra como desenvolver projetos que
         revolucionam a maneira de aprender.
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-y-8 gap-x-11'>
+      <div className='grid grid-cols-1 justify-items-center gap-y-8 gap-x-11 md:grid-cols-2 lg:grid-cols-4'>
         {users.map((user) => (
           <UserCard key={`user-key-${user.username}`} {...user} />
         ))}

@@ -6,14 +6,14 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
     <img
       src={avatar}
       alt={`Avatar do ${username}`}
-      className='rounded-xl mb-2.5 max-h-60 h-60 w-60 object-cover'
+      className='mb-2.5 h-60 max-h-60 w-60 rounded-xl object-cover'
     />
     <div className='flex justify-between'>
       <div>
-        <p className='font-spline font-bold text-xl text-gray-950'>
+        <p className='font-spline text-xl font-bold text-gray-950'>
           {username}
         </p>
-        <span className='text-gray-650 font-dm text-base'>{occupation}</span>
+        <span className='font-dm text-base text-gray-650'>{occupation}</span>
       </div>
       <a
         href={twitter}

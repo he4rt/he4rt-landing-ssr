@@ -35,7 +35,7 @@ const socialMediaLinks: LinkProps[] = [
     children: (
       <AiOutlineInstagram
         size={24}
-        className='hover:-translate-y-0.5 transform-gpu transition-all hover:fill-purple-500 footer__icons'
+        className='footer__icons transform-gpu transition-all hover:-translate-y-0.5 hover:fill-purple-500'
       />
     ),
     target: '_blank',
@@ -47,7 +47,7 @@ const socialMediaLinks: LinkProps[] = [
     children: (
       <AiOutlineTwitter
         size={24}
-        className='hover:-translate-y-0.5 transform-gpu transition-all hover:fill-purple-500 footer__icons'
+        className='footer__icons transform-gpu transition-all hover:-translate-y-0.5 hover:fill-purple-500'
       />
     ),
     target: '_blank',
@@ -59,7 +59,7 @@ const socialMediaLinks: LinkProps[] = [
     children: (
       <FaDiscord
         size={24}
-        className='hover:-translate-y-0.5 transform-gpu transition-all hover:fill-purple-500 footer__icons'
+        className='footer__icons transform-gpu transition-all hover:-translate-y-0.5 hover:fill-purple-500'
       />
     ),
     target: '_blank',
@@ -71,7 +71,7 @@ const socialMediaLinks: LinkProps[] = [
     children: (
       <AiOutlineGithub
         size={24}
-        className='hover:-translate-y-0.5 transform-gpu transition-all hover:fill-purple-500 footer__icons'
+        className='footer__icons transform-gpu transition-all hover:-translate-y-0.5 hover:fill-purple-500'
       />
     ),
     target: '_blank',
@@ -103,22 +103,22 @@ const FooterLink = ({
 
 export default function Footer() {
   return (
-    <footer className='w-full bg-blue-900 dark:bg-gray-100 flex items-center justify-center'>
-      <div className='flex flex-col text-gray-300 my-10 md:my-16'>
-        <ul className='flex scroll-bottom-1 justify-between font-sans text-sm mx-5 md:mx-0'>
+    <footer className='flex w-full items-center justify-center bg-blue-900 dark:bg-gray-100'>
+      <div className='my-10 flex flex-col text-gray-300 md:my-16'>
+        <ul className='scroll-bottom-1 mx-5 flex justify-between font-sans text-sm md:mx-0'>
           {anchorLinks.map(({ children, href }) => (
             <li key={href}>
               <FooterLink href={href}>{children}</FooterLink>
             </li>
           ))}
         </ul>
-        <div className='flex justify-center items-center my-10'>
+        <div className='my-10 flex items-center justify-center'>
           {socialMediaLinks.map((link) => (
             <FooterLink key={link.href} {...link} />
           ))}
         </div>
-        <div className='mx-10 scroll-bottom-3'>
-          <p className='font-semibold text-center text-gray-300 text-sm md:text-base'>
+        <div className='scroll-bottom-3 mx-10'>
+          <p className='text-center text-sm font-semibold text-gray-300 md:text-base'>
             © 2022 He4rt Devs. Todos os direitos reservados.
           </p>
         </div>

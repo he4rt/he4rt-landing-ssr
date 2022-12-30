@@ -42,37 +42,37 @@ export default function FindAtHe4rt() {
     <>
       <Container>
         <div className='mb-10'>
-          <h2 className='text-gray-700 font-bold text-2xl'>
+          <h2 className='text-2xl font-bold text-gray-700'>
             O que eu encontrarei na{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h2>
-          <p className='text-[#737272] mt-3 font-dm max-w-5xl'>
+          <p className='mt-3 max-w-5xl font-dm text-[#737272]'>
             Nós temos os recursos para levar qualquer ideia para frente, nenhum
             sonho é louco demais para nós. Descubra como desenvolver projetos
             que revolucionam a maneira de aprender.
           </p>
         </div>
-        <div className='flex justify-between flex-col md:flex-row'>
+        <div className='flex flex-col justify-between md:flex-row'>
           <div className='flex flex-col gap-10'>
             {Skills.map((topic) => (
               <He4rtSkills key={topic.title} {...topic} />
             ))}
           </div>
-          <div className='bg-gradient-to-r h-fit from-[#782BF1] to-[#A62BF1] mt-10 md:mt-0 py-10 rounded-xl md:rounded-l-xl px-10 md:relative -right-36'>
+          <div className='-right-36 mt-10 h-fit rounded-xl bg-gradient-to-r from-[#782BF1] to-[#A62BF1] py-10 px-10 md:relative md:mt-0 md:rounded-l-xl'>
             <img
               className='w-[584px]'
               src='/images/discord-print.png'
               alt='discord-print'
             />
-            <div className='text-[#f3f3f3] px-3'>
-              <h3 className='font-spline text-semibold'>
+            <div className='px-3 text-[#f3f3f3]'>
+              <h3 className='text-semibold font-spline'>
                 Venha participar do nosso Discord
               </h3>
-              <p className='font-dm mt-3 max-w-[584px]'>
+              <p className='mt-3 max-w-[584px] font-dm'>
                 Nós temos os recursos para levar qualquer ideia para frente,
                 nenhum sonho é louco demais para nós.
               </p>
-              <button className='bg-white text-base py-2 px-4 rounded-xl text-[#782BF1] font-semibold font-dm mt-5'>
+              <button className='mt-5 rounded-xl bg-white py-2 px-4 font-dm text-base font-semibold text-[#782BF1]'>
                 Entrar no Discord
               </button>
             </div>
