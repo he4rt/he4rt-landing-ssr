@@ -7,22 +7,17 @@ export default function SectionRecords() {
       <div className='flex flex-col items-start justify-between gap-6 md:gap-8 lg:flex-row'>
         <div className='flex flex-1 flex-col gap-4'>
           <h2 className='text-2xl font-bold text-gray-900 md:text-4xl'>
-            Quebramos <span className='text-purple-600'>muitos recordes</span>
+            O acesso a <span className='text-purple-600'>educação</span> não é
+            questão de sorte.
           </h2>
 
           <p className='text-base font-normal text-gray-500 md:text-lg'>
-            A inovação é liderada por pessoas que sabem o que fazem, sejam elas
-            profissionais jovens em início de carreira ou especialistas com anos
-            de experiência.
-          </p>
-          <p className='text-base font-normal text-gray-500 md:text-lg'>
-            A inovação é liderada por pessoas que sabem o que fazem, sejam elas
-            profissionais jovens em início de carreira ou especialistas com anos
-            de experiência.
-          </p>
-          <p className='text-base font-normal text-gray-500 md:text-lg'>
-            A inovação é liderada por pessoas que sabem o que fazem, sejam elas
-            profissionais jovens em início de carreira ou especialistas
+            Acreditamos que todos têm o direito de aprender e se desenvolver,
+            independentemente de sua origem ou situação financeira. Por isso,
+            lutamos para garantir que todos tenham acesso à educação acessível e
+            de qualidade. Conheça nossos eventos He4rt Conf e He4rt Meetup que
+            reune o melhor da tecnologia, educação, network e oportunidade em um
+            só lugar: na comunidade.
           </p>
         </div>
 
@@ -54,9 +49,7 @@ export default function SectionRecords() {
 
       <div className='flex flex-1 flex-col gap-4'>
         <h2 className='text-2xl font-bold text-gray-900 md:text-4xl'>
-          Outro título muito foda sobre eventos e tals,{' '}
-          <span className='text-purple-600'>mano tem que dar duas linhas</span>{' '}
-          tlgd.
+          Limites foram feitos para serem quebrados
         </h2>
 
         <p className='text-base font-normal text-gray-500 md:text-lg'>

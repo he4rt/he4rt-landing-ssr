@@ -39,13 +39,13 @@ export default function Staff() {
   return (
     <Container>
       <h3 className='mb-2 text-2xl font-bold text-gray-700 md:text-center md:text-4xl'>
-        Venha conhecer a equipe da{' '}
-        <span className='text-purple-500'>He4rt Devs.</span>
+        Com grandes <span className='text-purple-500'>poderes</span> vem grandes{' '}
+        <span className='text-purple-500'>responsabilidades</span>
       </h3>
       <p className='mx-auto mb-12	max-w-4xl text-lg font-normal text-gray-750 md:text-center md:text-xl'>
-        Nós temos os recursos para levar qualquer ideia para frente, nenhum
-        sonho é louco demais para nós. Descubra como desenvolver projetos que
-        revolucionam a maneira de aprender.
+        O impossível é nosso ponto de partida favorito. Conheça como a
+        autencidade de cada membro da administração fez possível uma comunidade
+        extraordinária. Somos movidos não pelo fácil, mas pelo surpreendente
       </p>
       <div className='grid grid-cols-1 justify-items-center gap-y-8 gap-x-11 md:grid-cols-2 lg:grid-cols-4'>
         {users.map((user) => (
