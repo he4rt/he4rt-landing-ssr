@@ -10,7 +10,7 @@ export default function He4rtSkills({ title, description }: SkillsProps) {
     <div className='max-w-xl lg:max-w-sm'>
       <div className='flex items-center gap-3'>
         <SlGraduation
-          className='rounded-full bg-purple-500/[0.1] p-3'
+          className='rounded-full bg-purple-500/10 p-3'
           color='#782BF1'
           size={40}
         />

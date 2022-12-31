@@ -105,7 +105,7 @@ export default function Footer() {
   return (
     <footer className='flex w-full items-center justify-center bg-blue-900 dark:bg-gray-100'>
       <div className='my-10 flex flex-col text-gray-300 md:my-16'>
-        <ul className='scroll-bottom-1 mx-5 flex justify-between font-sans text-sm md:mx-0'>
+        <ul className='scroll-bottom-1 mx-5 flex justify-between text-sm md:mx-0'>
           {anchorLinks.map(({ children, href }) => (
             <li key={href}>
               <FooterLink href={href}>{children}</FooterLink>

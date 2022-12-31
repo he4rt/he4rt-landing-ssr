@@ -6,21 +6,21 @@ export default function SectionRecords() {
     >
       <div className='flex flex-col items-start justify-between gap-6 md:gap-8 lg:flex-row'>
         <div className='flex flex-1 flex-col gap-4'>
-          <h2 className='text-[36px] font-bold leading-[43px] text-gray-900'>
+          <h2 className='text-2xl font-bold text-gray-900 md:text-4xl'>
             Quebramos <span className='text-purple-600'>muitos recordes</span>
           </h2>
 
-          <p className='text-base font-normal tracking-[-0.02em] text-gray-500 md:text-lg'>
+          <p className='text-base font-normal text-gray-500 md:text-lg'>
             A inovação é liderada por pessoas que sabem o que fazem, sejam elas
             profissionais jovens em início de carreira ou especialistas com anos
             de experiência.
           </p>
-          <p className='text-base font-normal tracking-[-0.02em] text-gray-500 md:text-lg'>
+          <p className='text-base font-normal text-gray-500 md:text-lg'>
             A inovação é liderada por pessoas que sabem o que fazem, sejam elas
             profissionais jovens em início de carreira ou especialistas com anos
             de experiência.
           </p>
-          <p className='text-base font-normal tracking-[-0.02em] text-gray-500 md:text-lg'>
+          <p className='text-base font-normal text-gray-500 md:text-lg'>
             A inovação é liderada por pessoas que sabem o que fazem, sejam elas
             profissionais jovens em início de carreira ou especialistas
           </p>
@@ -53,13 +53,13 @@ export default function SectionRecords() {
       </div>
 
       <div className='flex flex-1 flex-col gap-4'>
-        <h2 className='text-[36px] font-bold leading-[43px] text-gray-900'>
+        <h2 className='text-2xl font-bold text-gray-900 md:text-4xl'>
           Outro título muito foda sobre eventos e tals,{' '}
           <span className='text-purple-600'>mano tem que dar duas linhas</span>{' '}
           tlgd.
         </h2>
 
-        <p className='text-base font-normal tracking-[-0.02em] text-gray-500 md:text-lg'>
+        <p className='text-base font-normal text-gray-500 md:text-lg'>
           A inovação é liderada por pessoas que sabem o que fazem, sejam elas
           profissionais jovens em início de carreira ou especialistas com anos
           de experiência. Na He4rt, o ensino não depende só de indivíduos

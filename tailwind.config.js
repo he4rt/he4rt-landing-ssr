@@ -3,6 +3,9 @@ module.exports = {
   content: ['./app/**/*.{ts,tsx,jsx,js}', './styles/**/*.css'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      sans: ['DM Sans'],
+    },
     extend: {
       backgroundImage: {
         '4noobs-pattern':
@@ -54,7 +57,6 @@ module.exports = {
       },
       fontFamily: {
         spline: ['Spline Sans'],
-        sans: ['Source Sans Pro'],
         dm: ['DM Sans'],
       },
     },

@@ -8,7 +8,7 @@ export default function OurPartners() {
         <h2 className='mb-2 font-spline text-4xl font-bold text-gray-700'>
           Nossos parceiros
         </h2>
-        <p className='font-sans text-gray-750'>
+        <p className='text-gray-750'>
           Nós temos os recursos para levar qualquer ideia para frente, nenhum
           sonho é louco demais para nós. Descubra como desenvolver projetos que
           revolucionam a maneira de aprender.

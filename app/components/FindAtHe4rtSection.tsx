@@ -3,7 +3,7 @@ import He4rtSkills from '~/components/He4rtSkills';
 import type { SkillsProps } from '~/components/He4rtSkills';
 import Container from '~/components/Container';
 
-const Skills: SkillsProps[] = [
+const skills: SkillsProps[] = [
   {
     title: 'Desenvolvendo Habilidades',
     description:
@@ -42,7 +42,7 @@ export default function FindAtHe4rt() {
     <>
       <Container>
         <div className='mb-10'>
-          <h2 className='text-2xl font-bold text-gray-700'>
+          <h2 className='text-2xl font-bold text-gray-700 md:text-4xl'>
             O que eu encontrarei na{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h2>
@@ -54,7 +54,7 @@ export default function FindAtHe4rt() {
         </div>
         <div className='flex flex-col justify-between md:flex-row'>
           <div className='flex flex-col gap-10'>
-            {Skills.map((topic) => (
+            {skills.map((topic) => (
               <He4rtSkills key={topic.title} {...topic} />
             ))}
           </div>
@@ -65,7 +65,7 @@ export default function FindAtHe4rt() {
               alt='discord-print'
             />
             <div className='px-3 text-[#f3f3f3]'>
-              <h3 className='text-semibold font-spline'>
+              <h3 className='font-spline font-semibold'>
                 Venha participar do nosso Discord
               </h3>
               <p className='mt-3 max-w-[584px] font-dm'>

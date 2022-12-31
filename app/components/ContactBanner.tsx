@@ -7,7 +7,7 @@ export default function ContactBanner() {
         <div className='flex h-full w-full flex-col items-center justify-between md:flex-row'>
           <div className='flex max-w-xl flex-col gap-2 text-center md:text-start'>
             <h1 className='font-spline text-2xl font-semibold text-white'>
-              Novas pespestivas geram novas oportunidades
+              Novas perspectivas geram novas oportunidades
             </h1>
             <h2 className='text-base font-normal text-white'>
               Junte-se a nós e revolucione a maneira de aprender. Seja

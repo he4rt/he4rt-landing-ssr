@@ -10,7 +10,7 @@ export default function About() {
           className='mb-4 md:mr-8'
         />
         <div className='flex flex-col'>
-          <h2 className='mb-4 font-sans text-4xl font-bold text-gray-700 md:mb-2'>
+          <h2 className='mb-4 font-spline text-2xl font-bold text-gray-700 md:mb-2 md:text-4xl'>
             Afinal, o que é a{' '}
             <span className='text-purple-500'>He4rt Developers?</span>
           </h2>
@@ -25,7 +25,7 @@ export default function About() {
               Ajude a moldar nossa comunidade: faça parte dela.
             </span>
           </p>
-          <h3 className='mb-2 font-sans text-2xl font-bold text-gray-700'>
+          <h3 className='mb-2 font-spline text-xl font-bold text-gray-700 md:text-2xl'>
             Como posso me juntar a{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h3>

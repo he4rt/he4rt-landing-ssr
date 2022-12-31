@@ -38,11 +38,11 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
 export default function Staff() {
   return (
     <Container>
-      <h3 className='mb-2 font-sans text-4xl font-bold text-gray-700 md:text-center'>
+      <h3 className='mb-2 text-2xl font-bold text-gray-700 md:text-center md:text-4xl'>
         Venha conhecer a equipe da{' '}
         <span className='text-purple-500'>He4rt Devs.</span>
       </h3>
-      <p className='mx-auto mb-12	max-w-4xl font-sans text-xl font-normal text-gray-750 md:text-center'>
+      <p className='mx-auto mb-12	max-w-4xl text-lg font-normal text-gray-750 md:text-center md:text-xl'>
         Nós temos os recursos para levar qualquer ideia para frente, nenhum
         sonho é louco demais para nós. Descubra como desenvolver projetos que
         revolucionam a maneira de aprender.
