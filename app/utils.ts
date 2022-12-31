@@ -14,7 +14,9 @@ export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
   badgesCount: apiProfile.badges_count,
   rankingPosition: apiProfile.ranking_position,
   about: apiProfile.about,
-  profilePicture: `https://ui-avatars.com/api/?name=${encodeURIComponent(
-    apiProfile.nickname,
-  )}`,
+  profilePicture:
+    apiProfile.discord_avatar_url ??
+    `https://ui-avatars.com/api/?name=${encodeURIComponent(
+      apiProfile.nickname,
+    )}`,
 });

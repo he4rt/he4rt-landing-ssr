@@ -30,6 +30,7 @@ interface SeasonInfo {
 export interface APIProfile {
   id: number;
   discord_id: number;
+  discord_avatar_url?: string;
   twitch_id: unknown;
   email: string;
   name: string;
