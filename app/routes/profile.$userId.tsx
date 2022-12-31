@@ -3,11 +3,7 @@ import ProfileAboutMe from '~/components/profile/ProfileAboutMe';
 import ProfileBackground from '~/components/profile/ProfileBackground';
 import ProfileHeader from '~/components/profile/ProfileHeader';
 import ProfilePicture from '~/components/profile/ProfilePicture';
-import axios from 'axios';
-import * as process from 'process';
-import { badRequest, notFound, serverError } from 'remix-utils';
-import type { APIProfile } from '~/types/profile';
-import { apiProfileToAppProfile } from '~/utils';
+import { badRequest } from 'remix-utils';
 import { useLoaderData } from '@remix-run/react';
 import { fetchProfile } from '~/services/fetchProfile';
 

@@ -16,7 +16,7 @@ type ProfileHeaderProps = Pick<
 export default function ProfileHeader(props: ProfileHeaderProps) {
   return (
     <section className='pt-20'>
-      <div className='flex w-full justify-between'>
+      <div className='flex w-full flex-col justify-between space-y-4 md:flex-row md:space-y-0'>
         <ProfileUsernameAndSocials {...props} />
         <ProfileStats
           type='messages'
