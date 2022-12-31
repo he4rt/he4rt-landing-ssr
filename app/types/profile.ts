@@ -48,15 +48,15 @@ export interface APIProfile {
   ranking_position: number;
   badges_count: number;
   messages_count: number;
-  season_info: SeasonInfo[];
+  season_info?: SeasonInfo[];
 }
 
 export interface APPProfile {
   level: APIProfile['level'];
 
-  seasonInfo: {
-    rankingPosition: SeasonInfo['ranking_position'];
-    seasonName: SeasonInfo['season']['name'];
+  seasonInfo?: {
+    rankingPosition?: SeasonInfo['ranking_position'];
+    seasonName?: SeasonInfo['season']['name'];
   };
 
   name: APIProfile['name'];

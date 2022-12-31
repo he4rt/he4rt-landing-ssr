@@ -3,8 +3,8 @@ import type { APIProfile, APPProfile } from '~/types/profile';
 export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
   level: apiProfile.level,
   seasonInfo: {
-    rankingPosition: apiProfile.season_info[0].ranking_position,
-    seasonName: apiProfile.season_info[0].season.name,
+    rankingPosition: apiProfile.season_info?.[0]?.ranking_position,
+    seasonName: apiProfile.season_info?.[0]?.season.name,
   },
   name: apiProfile.name,
   nickname: apiProfile.nickname,
