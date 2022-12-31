@@ -48,7 +48,6 @@ module.exports = {
           500: '#F1E9FF',
           700: '#C92BF1',
         },
-        green: '#2BF162',
       },
       container: {
         center: true,
