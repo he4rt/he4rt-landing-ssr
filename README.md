@@ -42,6 +42,8 @@ Para fazer a instalação do He4rtLanding, siga as etapas abaixo:
 
 - [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/pt-br/) versão 16.4.2
+- [Yarn](https://yarnpkg.com/)
+
 
 A maneira de instalar os pacotes acima podem variar de acordo com o seu sistema operacional. Para verificar qual instalação é mais adequada para você, acesse a página oficial dos pacotes requisitados e siga as instruções.
 
