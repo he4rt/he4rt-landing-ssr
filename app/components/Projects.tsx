@@ -47,7 +47,7 @@ const Projects = () => {
       <Slider {...settings}>
         {data.projects.map((project) => (
           <div key={project.username}>
-            <div className='m-4 flex flex-1 flex-col overflow-hidden rounded-lg shadow-md'>
+            <div className='mr-3 flex flex-1 flex-col overflow-hidden rounded-lg shadow-md'>
               <div className='flex flex-1 flex-row items-center justify-center gap-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] p-4 text-white'>
                 <img
                   src={project.avatar}
