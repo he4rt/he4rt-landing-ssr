@@ -1,8 +1,26 @@
 import Projects from './Projects';
+import { Link } from '@remix-run/react';
+import * as data from '~/mocks/header';
 
 export default function He4rt() {
   return (
     <>
+
+      <div className='sticky top-0 bg-gradient-to-r from-purple-500 to-[#A655FF] z-10 absolute w-full'>
+        <nav className="container">
+          <div className="mx-auto">
+            <div className="flex">
+              {data.links.map(({title, link}) => (
+                <Link to={link} className="font-spline text-[#F3F3F3] px-10 py-6 text-base font-semibold leading-5	" key={title}>
+                  {title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
@@ -12,6 +30,7 @@ export default function He4rt() {
         className='container relative mx-auto flex w-full flex-col items-center justify-between gap-6 px-10 py-24 lg:flex-row lg:py-[196px]'
         id='inicio'
       >
+
         <div className='flex w-full flex-col lg:w-1/2 lg:max-w-[544px]'>
           <h1 className='font-spline text-2xl font-bold text-[#424141] md:text-4xl'>
             Feito pela{' '}
