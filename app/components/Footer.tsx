@@ -119,7 +119,7 @@ export default function Footer() {
         </div>
         <div className='scroll-bottom-3 mx-10'>
           <p className='text-center text-sm font-semibold text-gray-300 md:text-base'>
-            © 2022 He4rt Devs. Todos os direitos reservados.
+            © {(new Date().getFullYear())} He4rt Devs. Todos os direitos reservados.
           </p>
         </div>
       </div>
