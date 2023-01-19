@@ -2,7 +2,6 @@ import type { LinksFunction } from '@remix-run/node';
 
 import About from '~/components/About';
 import FindAtHe4rtSection from '~/components/FindAtHe4rtSection';
-import Footer from '~/components/Footer';
 import He4rt from '~/components/He4rt';
 import OurPartners from '~/components/OurPartners';
 import SectionRecords from '~/components/SectionRecords';
@@ -31,7 +30,6 @@ export default function Index() {
       <SectionRecords />
       <ContactBanner />
       <OurPartners />
-      <Footer />
     </>
   );
 }

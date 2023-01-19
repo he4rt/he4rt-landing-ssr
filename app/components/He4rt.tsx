@@ -5,22 +5,7 @@ import * as data from '~/mocks/header';
 export default function He4rt() {
   return (
     <>
-
-      <div className='sticky top-0 bg-gradient-to-r from-purple-500 to-[#A655FF] z-10 absolute w-full'>
-        <nav className="container">
-          <div className="mx-auto">
-            <div className="flex">
-              {data.links.map(({title, link}) => (
-                <Link to={link} className="font-spline text-[#F3F3F3] px-10 py-6 text-base font-semibold leading-5	" key={title}>
-                  {title}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </nav>
-      </div>
-
-
+      
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
