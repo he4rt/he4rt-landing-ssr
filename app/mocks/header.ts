@@ -3,27 +3,26 @@ import type { Link } from '~/types/link'
 export const links: Link[] = [
     {
       title: 'Início',
-      link: '#',
+      link: '/',
     },
     {
       title: '4Noobs',
-      link: '#',
+      link: '/4noobs',
     },
     {
       title: 'Staff',
-      link: '#',
+      link: '/staff',
     },
     {
       title: 'Eventos',
-      link: '#',
+      link: '/eventos',
     },
     {
       title: 'Parceiros',
-      link: '#',
+      link: '/parceiros',
     },
     {
       title: 'Ranking',
-      link: '#',
+      link: '/ranking',
     },
-
   ]
