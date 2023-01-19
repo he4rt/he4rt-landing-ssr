@@ -37,15 +37,15 @@ const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
       <Slider {...settings}>
         {contributors?.map((contributor) => (
           <div key={contributor.username} className='select-none'>
-            <div className='flex flex-col flex-1 mx-4 my-4 overflow-hidden rounded-lg shadow-md h-72 md:mx-0 md:w-56'>
+            <div className='mx-4 my-4 flex h-72 flex-1 flex-col overflow-hidden rounded-lg shadow-md md:mx-0 md:w-56'>
               <div className='flex h-full max-h-14 flex-1 flex-row items-center justify-center gap-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] p-4 text-white'>
                 <img
                   src={contributor.avatar}
                   alt='Avatar do usuário'
-                  className='w-8 h-8 rounded-full shadow-md'
+                  className='h-8 w-8 rounded-full shadow-md'
                 />
 
-                <div className='flex flex-col w-32'>
+                <div className='flex w-32 flex-col'>
                   <p className='... truncate text-xs font-bold'>
                     {contributor.name}
                   </p>
@@ -53,7 +53,7 @@ const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
                 </div>
               </div>
 
-              <div className='flex flex-col flex-1 p-4 bg-white'>
+              <div className='flex flex-1 flex-col bg-white p-4'>
                 <p className='text-sm font-bold text-[#782BF1]'>
                   4Noobs{' '}
                   <span className='font-normal text-[#424141]'>
@@ -76,7 +76,7 @@ const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
                 href={contributor.github}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex flex-col flex-1 h-full py-1 font-bold text-center text-white transition-all bg-purple-500 max-h-9 hover:bg-purple-600'
+                className='flex h-full max-h-9 flex-1 flex-col bg-purple-500 py-1 text-center font-bold text-white transition-all hover:bg-purple-600'
               >
                 Acessar
               </a>

@@ -12,13 +12,13 @@ O He4rtLanding é um projeto **Open-Source** criado para apresentar a comunidade
 
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Instalação](#instalação)
-    - [Pré requisitos](#pré-requisitos)
-    - [Baixando o projeto](#baixando-o-projeto)
-    - [Instalando as dependências](#instalando-as-dependências)
-    - [Iniciando a aplicação](#iniciando-a-aplicação)
+  - [Pré requisitos](#pré-requisitos)
+  - [Baixando o projeto](#baixando-o-projeto)
+  - [Instalando as dependências](#instalando-as-dependências)
+  - [Iniciando a aplicação](#iniciando-a-aplicação)
 - [Contribuir](#como-contribuir)
 
-[//]: # (- [Documentação]&#40;./doc/Padroes.md&#41;)
+[//]: # '- [Documentação](./doc/Padroes.md)'
 
 <br/>
 
@@ -27,12 +27,11 @@ O He4rtLanding é um projeto **Open-Source** criado para apresentar a comunidade
 O projeto foi construido utilizando as seguintes tecnologias:
 
 | Tecnologia                                    | Versão                                                           |
-|-----------------------------------------------|------------------------------------------------------------------|
+| --------------------------------------------- | ---------------------------------------------------------------- |
 | [Remix](https://remix.run/)                   | ![Remix](https://img.shields.io/badge/version-1.9-green)         |
 | [TypeScript](https://www.typescriptlang.org/) | ![TypeScript](https://img.shields.io/badge/version-4.8.4-green)  |
 | [Tailwind CSS](https://tailwindcss.com/)      | ![Tailwindcss](https://img.shields.io/badge/version-3.2.4-green) |
 | [axios](https://axios-http.com/ptbr/)         | ![Axios](https://img.shields.io/badge/version-1.2.2-green)       |
-
 
 ### Instalação
 
@@ -43,7 +42,6 @@ Para fazer a instalação do He4rtLanding, siga as etapas abaixo:
 - [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/pt-br/) versão 16.4.2
 - [Yarn](https://yarnpkg.com/)
-
 
 A maneira de instalar os pacotes acima podem variar de acordo com o seu sistema operacional. Para verificar qual instalação é mais adequada para você, acesse a página oficial dos pacotes requisitados e siga as instruções.
 
@@ -93,7 +91,7 @@ são **extremamente apreciadas**!
 
 <br />
 
-[//]: # (Veja [Documentação]&#40;./doc/Padroes.md&#41; para saber mais sobre o projeto.)
+[//]: # 'Veja [Documentação](./doc/Padroes.md) para saber mais sobre o projeto.'
 
 <br />
 
