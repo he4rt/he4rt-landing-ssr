@@ -5,7 +5,7 @@ import { apiContributorsToAppContributors } from '~/utils';
 const contributorsURL = process.env.GITHUB_CONTRIBUTORS_URL;
 
 if (!contributorsURL) {
-  throw new Error('GITHUB_CONTRIBUTORS_URLenv not found');
+  throw new Error('GITHUB_CONTRIBUTORS_URL env not found');
 }
 
 export async function fetchContributors(): Promise<APPContributors[]> {
