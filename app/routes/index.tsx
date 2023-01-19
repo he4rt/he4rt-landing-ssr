@@ -1,5 +1,4 @@
 import type { LinksFunction } from '@remix-run/node';
-import { badRequest } from 'remix-utils';
 
 import About from '~/components/About';
 import FindAtHe4rtSection from '~/components/FindAtHe4rtSection';
@@ -17,11 +16,7 @@ import { useLoaderData } from '@remix-run/react';
 export const loader = async () => {
   const contributors = await fetchContributors();
 
-  if (!contributors) {
-    throw badRequest({ message: 'No contributors found' });
-  }
-
-  return contributors;
+  return contributors ?? [];
 };
 
 type LoaderType = typeof loader;
