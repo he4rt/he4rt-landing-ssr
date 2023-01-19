@@ -9,6 +9,8 @@ import {
 } from '@remix-run/react';
 
 import styles from '~/tailwind.css';
+import Footer from '~/components/Footer';
+import Navbar from '~/components/Navbar';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -31,7 +33,7 @@ export const links: LinksFunction = () => [
   },
   {
     rel: 'icon',
-    href: '/images/brands/heart.svg',
+    href: '/brands/heart.svg',
     type: 'image/svg',
   },
 ];
@@ -44,10 +46,12 @@ export default function App() {
         <Links />
       </head>
       <body className='h-screen overflow-x-hidden'>
+      <Navbar/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+      <Footer />
       </body>
     </html>
   );
