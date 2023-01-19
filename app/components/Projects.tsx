@@ -33,7 +33,7 @@ const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
   };
 
   return (
-    <div className='w-full md:w-[715px]'>
+    <div className='mt-4 w-full md:w-[715px]'>
       <Slider {...settings}>
         {contributors?.map((contributor) => (
           <div key={contributor.username} className='select-none'>

@@ -14,7 +14,7 @@ export default function He4rt({
         className='absolute top-0 right-0 w-full max-w-[70%] md:max-w-[50%]'
       />
       <header
-        className='container relative mx-auto flex w-full flex-col items-center justify-between gap-6 px-10 py-24 lg:flex-row lg:py-[196px]'
+        className='container relative mx-auto flex w-full flex-col items-center justify-between gap-6  px-10 pb-12 pt-28 lg:flex-row lg:py-[196px]'
         id='inicio'
       >
         <div className='flex w-full flex-col lg:w-1/2 lg:max-w-[544px]'>
