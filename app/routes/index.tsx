@@ -1,4 +1,5 @@
 import type { LinksFunction } from '@remix-run/node';
+import { badRequest } from 'remix-utils';
 
 import About from '~/components/About';
 import FindAtHe4rtSection from '~/components/FindAtHe4rtSection';
@@ -9,6 +10,21 @@ import SectionRecords from '~/components/SectionRecords';
 import Staff from '~/components/Staff';
 import ForNoobs from '~/components/ForNoobs';
 import ContactBanner from '~/components/ContactBanner';
+
+import { fetchContributors } from '~/services/fetchContributors';
+import { useLoaderData } from '@remix-run/react';
+
+export const loader = async () => {
+  const contributors = await fetchContributors();
+
+  if (!contributors) {
+    throw badRequest({ message: 'No contributors found' });
+  }
+
+  return contributors;
+};
+
+type LoaderType = typeof loader;
 
 export const links: LinksFunction = () => {
   return [
@@ -21,9 +37,11 @@ export const links: LinksFunction = () => {
 };
 
 export default function Index() {
+  const contributorsData = useLoaderData<LoaderType>();
+
   return (
     <>
-      <He4rt />
+      <He4rt contributors={contributorsData} />
       <About />
       <ForNoobs />
       <FindAtHe4rtSection />
