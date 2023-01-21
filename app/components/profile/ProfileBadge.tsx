@@ -17,6 +17,10 @@ export default function ProfileBadge({ badgeInfo }: ProfileBadgeProps) {
               src={badgePicture}
               alt={`Imagem da consquista ${name}`}
               className='w-8 h-8 rounded-lg'
+              onError={({ currentTarget }) => {
+                currentTarget.onerror = null;
+                currentTarget.src = '/images/default-badge.png';
+              }}
             />
             <div className='flex flex-col'>
               <p className='font-sans text-base font-bold'>{name}</p>
