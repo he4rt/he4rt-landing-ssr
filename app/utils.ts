@@ -2,10 +2,6 @@ import type { APIProfile, APPProfile } from '~/types/profile';
 
 export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
   level: apiProfile.level,
-  seasonInfo: {
-    rankingPosition: apiProfile.season_info?.[0]?.ranking_position,
-    seasonName: apiProfile.season_info?.[0]?.season.name,
-  },
   name: apiProfile.name,
   nickname: apiProfile.nickname,
   git: apiProfile.git,
@@ -19,4 +15,14 @@ export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
     `https://ui-avatars.com/api/?name=${encodeURIComponent(
       apiProfile.nickname,
     )}`,
+  seasonInfo: {
+    rankingPosition: apiProfile.season_info?.[0]?.ranking_position,
+    seasonName: apiProfile.season_info?.[0]?.season.name,
+  },
+  badgeInfo: apiProfile.badges?.map((badge) => ({
+    id: badge.id,
+    name: badge.name,
+    description: badge.description,
+    badgePicture: badge.image_url,
+  })),
 });
