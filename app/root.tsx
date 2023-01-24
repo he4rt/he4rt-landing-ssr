@@ -45,13 +45,31 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className='h-screen overflow-x-hidden'>
-      <Navbar/>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      <Footer />
+      <body className='h-screen  overflow-x-hidden '>
+
+      <div className="drawer">
+        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content">
+          <Navbar/>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+          <Footer />
+        </div>
+
+        <div className="drawer-side">
+          <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+          <ul className="menu p-4 w-80 bg-base-100">
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
       </body>
     </html>
   );

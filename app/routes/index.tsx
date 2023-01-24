@@ -25,7 +25,7 @@ export default function Index() {
       <He4rt />
       <About />
       <ForNoobs />
-      <FindAtHe4rtSection />
+      {/*<FindAtHe4rtSection />*/}
       <Staff />
       <SectionRecords />
       <ContactBanner />

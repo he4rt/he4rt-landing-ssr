@@ -1,4 +1,7 @@
-import type { Link } from '~/types/link'
+interface Link {
+  title: string,
+  link: string
+}
 
 export const links: Link[] = [
     {
