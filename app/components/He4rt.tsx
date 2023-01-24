@@ -1,6 +1,4 @@
 import Projects from './Projects';
-import { Link } from '@remix-run/react';
-import * as data from '~/mocks/header';
 
 export default function He4rt() {
   return (
