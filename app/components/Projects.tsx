@@ -1,17 +1,7 @@
 import Slider from 'react-slick';
-import * as data from '~/mocks/projects';
+import type { APPContributors } from '~/types/contributors';
 
-export type ProjectsProps = {
-  avatar: string;
-  username: string;
-  github: string;
-  projectTitle: string;
-  projectCategory: string;
-  projectDescription: string;
-  projectUrl: string;
-};
-
-const Projects = () => {
+const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -45,19 +35,21 @@ const Projects = () => {
   return (
     <div className='mt-4 w-full md:w-[715px]'>
       <Slider {...settings}>
-        {data.projects.map((project) => (
-          <div key={project.username}>
-            <div className='mr-3 mb-4 lg:mr-8 flex flex-1 flex-col overflow-hidden rounded-lg shadow-md'>
-              <div className='flex flex-1 flex-row items-center justify-center gap-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] p-4 text-white'>
+        {contributors?.map((contributor) => (
+          <div key={contributor.username} className='select-none'>
+            <div className='mx-4 my-4 flex h-72 flex-1 flex-col overflow-hidden rounded-lg shadow-md md:mx-0 md:w-56'>
+              <div className='flex h-full max-h-14 flex-1 flex-row items-center justify-center gap-4 bg-gradient-to-tr from-[#782BF1] to-[#C92BF1] p-4 text-white'>
                 <img
-                  src={project.avatar}
+                  src={contributor.avatar}
                   alt='Avatar do usuário'
                   className='h-8 w-8 rounded-full shadow-md'
                 />
 
                 <div className='flex w-32 flex-col'>
-                  <p className='text-xs font-bold'>{project.username}</p>
-                  <p className='text-xs'>{project.github}</p>
+                  <p className='... truncate text-xs font-bold'>
+                    {contributor.name}
+                  </p>
+                  <p className='text-xs'>{contributor.username}</p>
                 </div>
               </div>
 
@@ -65,25 +57,26 @@ const Projects = () => {
                 <p className='text-sm font-bold text-[#782BF1]'>
                   4Noobs{' '}
                   <span className='font-normal text-[#424141]'>
-                    - {project.projectTitle}
+                    -{' '}
+                    {contributor.projectTitle.split('4noobs'.toLowerCase())[0]}
                   </span>
                 </p>
                 <p className='text-xs font-medium text-[#8C8B8E]'>
-                  {project.projectCategory}
+                  {contributor.projectCategory}
                 </p>
 
-                <span className='boder-[#F1E9FF] mt-2 flex w-full border-t' />
+                <span className='mt-2 flex w-full border-t border-[#F1E9FF]' />
 
                 <p className='mt-2 w-full text-xs font-normal text-[#8C8B8E]'>
-                  {project.projectDescription}
+                  {contributor.projectDescription}
                 </p>
               </div>
 
               <a
-                href={project.projectUrl}
+                href={contributor.github}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='flex flex-1 flex-col bg-purple-500 py-1 text-center font-bold text-white transition-all hover:bg-purple-600'
+                className='flex h-full max-h-9 flex-1 flex-col bg-purple-500 py-1 text-center font-bold text-white transition-all hover:bg-purple-600'
               >
                 Acessar
               </a>

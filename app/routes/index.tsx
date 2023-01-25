@@ -10,6 +10,17 @@ import Staff from '~/components/Staff';
 import ForNoobs from '~/components/ForNoobs';
 import ContactBanner from '~/components/ContactBanner';
 
+import { fetchContributors } from '~/services/fetchContributors';
+import { useLoaderData } from '@remix-run/react';
+
+export const loader = async () => {
+  const contributors = await fetchContributors();
+
+  return contributors ?? [];
+};
+
+type LoaderType = typeof loader;
+
 export const links: LinksFunction = () => {
   return [
     {
@@ -21,9 +32,11 @@ export const links: LinksFunction = () => {
 };
 
 export default function Index() {
+  const contributorsData = useLoaderData<LoaderType>();
+
   return (
     <>
-      <He4rt />
+      <He4rt contributors={contributorsData} />
       <About />
       <ForNoobs />
       <FindAtHe4rtSection />
