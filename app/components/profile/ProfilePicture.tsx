@@ -4,14 +4,13 @@ import ProfileSeasonBadge from './ProfileSeasonBadge';
 
 type ProfilePictureProps = Pick<
   APPProfile,
-  'nickname' | 'level' | 'profilePicture' | 'seasonInfo' | 'current_exp'
+  'nickname' | 'level' | 'profilePicture' | 'seasonInfo'
 >;
 
 export default function ProfilePicture({
   profilePicture,
   nickname,
   level,
-  current_exp,
   ...seasonInfo
 }: ProfilePictureProps) {
   return (
