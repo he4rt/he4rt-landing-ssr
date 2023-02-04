@@ -7,8 +7,7 @@ export default function ProfileBadge({ badgeInfo }: ProfileBadgeProps) {
     <section className='flex flex-col my-8 space-y-3'>
       <h1 className='text-base font-bold font-spline'>🏆 Conquistas</h1>
       <p className='text-base font-normal font-dm text-gray-775'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elit ex.
-        Nam diam metus, facilisis ut mollis vel, mollis at sapien.
+        Seção de conquistas referentes à gameficação do servidor e eventos externos.
       </p>
       <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
         {badgeInfo?.map(({ id, badgePicture, name, description }) => (
