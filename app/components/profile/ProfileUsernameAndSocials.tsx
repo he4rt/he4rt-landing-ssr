@@ -34,7 +34,7 @@ export default function ProfileUsernameAndSocials({
 const LinkedinIcon = () => (
   <svg
     viewBox='0 0 16 17'
-    className='h-5'
+    className='h-5 duration-500 hover:text-purple-600'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
   >
@@ -48,7 +48,7 @@ const LinkedinIcon = () => (
 const GithubIcon = () => (
   <svg
     viewBox='0 0 16 17'
-    className='h-5'
+    className='h-5 duration-500 hover:text-purple-600'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
   >
