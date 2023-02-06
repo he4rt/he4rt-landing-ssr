@@ -27,6 +27,21 @@ interface SeasonInfo {
   season: Season;
 }
 
+interface BadgeInfo {
+  id: number;
+  name: string;
+  description: string;
+  redeem_code: string;
+  image_url: string;
+  active: boolean;
+  created_at: string;
+  updated_at: string;
+  pivot: {
+    user_id: number;
+    badge_id: number;
+  };
+}
+
 export interface APIProfile {
   id: number;
   discord_id: number;
@@ -50,6 +65,7 @@ export interface APIProfile {
   badges_count: number;
   messages_count: number;
   season_info?: SeasonInfo[];
+  badges?: BadgeInfo[];
 }
 
 export interface APPProfile {
@@ -59,6 +75,13 @@ export interface APPProfile {
     rankingPosition?: SeasonInfo['ranking_position'];
     seasonName?: SeasonInfo['season']['name'];
   };
+
+  badgeInfo?: {
+    id: BadgeInfo['id'];
+    name: BadgeInfo['name'];
+    description: BadgeInfo['description'];
+    badgePicture: BadgeInfo['image_url'];
+  }[];
 
   name: APIProfile['name'];
   nickname: APIProfile['nickname'];

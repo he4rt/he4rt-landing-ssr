@@ -68,13 +68,18 @@ export default function FindAtHe4rt() {
               <h3 className='font-spline font-semibold'>
                 Venha participar do nosso Discord
               </h3>
-              <p className='mt-3 max-w-[584px] font-dm'>
+              <p className='mt-3 mb-5 max-w-[584px] font-dm'>
                 Nós temos os recursos para levar qualquer ideia para frente,
                 nenhum sonho é louco demais para nós.
               </p>
-              <button className='mt-5 rounded-xl bg-white py-2 px-4 font-dm text-base font-semibold text-[#782BF1]'>
+              <a
+                href='https://discord.gg/he4rt'
+                target='_blank'
+                rel='noreferrer noopener'
+                className='rounded-xl bg-white py-2 px-4 font-dm text-base font-semibold text-[#782BF1]'
+              >
                 Entrar no Discord
-              </button>
+              </a>
             </div>
           </div>
         </div>

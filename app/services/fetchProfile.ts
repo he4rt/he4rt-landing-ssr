@@ -28,13 +28,13 @@ export async function fetchProfile(userId: string): Promise<APPProfile> {
       console.error(`Error while fetching ${userId}`);
       console.error(err);
 
-      if (axios.isAxiosError(err)) {
-        // Api returns a 422 when user doesnt exists on the DB
-        if (err.status === 422) {
-          throw notFound({});
-        }
-
+      if (!axios.isAxiosError(err)) {
         throw serverError({});
+      }
+
+      // Api returns a 422 when user doesnt exists on the DB
+      if (err.status === 422) {
+        throw notFound({});
       }
 
       throw serverError({});
