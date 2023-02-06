@@ -103,23 +103,24 @@ const FooterLink = ({
 
 export default function Footer() {
   return (
-    <footer className='flex w-full items-center justify-center bg-blue-900 dark:bg-gray-100'>
-      <div className='my-10 flex flex-col text-gray-300 md:my-16'>
-        <ul className='scroll-bottom-1 mx-5 flex justify-between text-sm md:mx-0'>
+    <footer className='flex items-center justify-center w-full bg-blue-900 dark:bg-gray-100'>
+      <div className='flex flex-col my-10 text-gray-300 md:my-16'>
+        <ul className='flex justify-between mx-5 text-sm scroll-bottom-1 md:mx-0'>
           {anchorLinks.map(({ children, href }) => (
             <li key={href}>
               <FooterLink href={href}>{children}</FooterLink>
             </li>
           ))}
         </ul>
-        <div className='my-10 flex items-center justify-center'>
+        <div className='flex items-center justify-center my-10'>
           {socialMediaLinks.map((link) => (
             <FooterLink key={link.href} {...link} />
           ))}
         </div>
-        <div className='scroll-bottom-3 mx-10'>
-          <p className='text-center text-sm font-semibold text-gray-300 md:text-base'>
-            © 2022 He4rt Devs. Todos os direitos reservados.
+        <div className='mx-10 scroll-bottom-3'>
+          <p className='text-sm font-semibold text-center text-gray-300 md:text-base'>
+            © {new Date().getFullYear()} He4rt Devs. Todos os direitos
+            reservados.
           </p>
         </div>
       </div>
