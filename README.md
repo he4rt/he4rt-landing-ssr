@@ -11,6 +11,7 @@ O He4rtLanding é um projeto **Open-Source** criado para apresentar a comunidade
 ### Seções Rápidas
 
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Figma](#figma)
 - [Instalação](#instalação)
   - [Pré requisitos](#pré-requisitos)
   - [Baixando o projeto](#baixando-o-projeto)
@@ -32,6 +33,10 @@ O projeto foi construido utilizando as seguintes tecnologias:
 | [TypeScript](https://www.typescriptlang.org/) | ![TypeScript](https://img.shields.io/badge/version-4.8.4-green)  |
 | [Tailwind CSS](https://tailwindcss.com/)      | ![Tailwindcss](https://img.shields.io/badge/version-3.2.4-green) |
 | [axios](https://axios-http.com/ptbr/)         | ![Axios](https://img.shields.io/badge/version-1.2.2-green)       |
+
+### Figma
+
+Veja o design proposto da aplicação no [link do figma](https://www.figma.com/file/vCJ4Cd2SBXcdB1jiwzHmnS/%F0%9F%92%9C-%7C-He4rt-Devs?node-id=2278%3A1624&t=GdXeC37IEpLW5CTi-0), alterações e propostas de melhorias são bem vindas.
 
 ### Instalação
 
