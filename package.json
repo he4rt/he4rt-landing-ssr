@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
+    "react-use": "^17.4.0",
     "remix-utils": "^5.1.0"
   },
   "devDependencies": {

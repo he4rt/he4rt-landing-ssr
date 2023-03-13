@@ -8,7 +8,7 @@ export default function PartnerCard() {
           src='/images/partner-picture.png'
         />
         <div>
-          <div className='flex items-center justify-between'>
+          <div className='flex flex-col items-center justify-between md:flex-row'>
             <h3 className='font-spline text-xl font-bold text-gray-950'>
               Sinergicon
             </h3>
