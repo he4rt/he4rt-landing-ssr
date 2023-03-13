@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useMedia } from 'react-use';
 
@@ -45,8 +45,11 @@ const AnchorLink = ({ to, children }: AnchorLinkProps) => (
 
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
-
   const toggleMenu = () => setOpen((prev) => !prev);
+
+  useEffect(() => {
+    document.body.style.overflowY = open ? 'hidden' : 'auto';
+  }, [open]);
 
   if (!open) {
     return (
@@ -84,7 +87,7 @@ const MobileNavbar = () => {
           <a
             href='/'
             target='_blank'
-            className='rounded-lg bg-white py-2 px-4 text-base font-bold text-purple-500'
+            className='rounded-lg bg-white px-4 py-2 text-base font-bold text-purple-500'
           >
             Entrar em contato
           </a>
