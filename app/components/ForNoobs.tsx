@@ -1,6 +1,9 @@
 export default function ForNoobs() {
   return (
-    <section className='relative bg-purple-500 drop-shadow-lg  before:absolute before:h-full before:w-full before:bg-4noobs-pattern before:opacity-25'>
+    <section
+      className='relative bg-purple-500 drop-shadow-lg  before:absolute before:h-full before:w-full before:bg-4noobs-pattern before:opacity-25'
+      id='4noobs'
+    >
       <div className='container relative flex h-full w-full gap-64 px-10 py-12 md:px-24'>
         <div className='flex w-full flex-col items-start justify-center'>
           <span className='text-xl font-bold text-[#DDDDDD]'>
@@ -19,6 +22,7 @@ export default function ForNoobs() {
             className='mt-8 block rounded-xl border-2 border-[#F3F3F3] py-2 px-4 font-bold text-[#F3F3F3]'
             href='https://github.com/he4rt/4noobs'
             target='_blank'
+            rel='noreferrer'
           >
             Conhecer o 4Noobs
           </a>

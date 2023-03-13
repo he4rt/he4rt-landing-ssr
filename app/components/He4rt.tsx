@@ -11,11 +11,11 @@ export default function He4rt({
       <img
         src='/images/background-heart.png'
         alt='Imagem com degradê roxo com a logo da He4rt Developers ao fundo desfocada'
-        className='absolute top-0 right-0 w-full max-w-[70%] md:max-w-[50%]'
+        className='absolute right-0 w-full max-w-[70%] md:max-w-[50%]'
       />
       <header
         className='container relative mx-auto flex w-full flex-col items-center justify-between gap-6  px-10 pb-12 pt-28 lg:flex-row lg:py-[196px]'
-        id='inicio'
+        id='init'
       >
         <div className='flex w-full flex-col lg:w-1/2 lg:max-w-[544px]'>
           <h1 className='font-spline text-2xl font-bold text-[#424141] md:text-4xl'>

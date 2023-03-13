@@ -15,6 +15,7 @@ export default function ContactBanner() {
               seus objetivos.
             </h2>
           </div>
+          {/* TODO adicionar link do discord */}
           <a
             href='/'
             target='_blank'

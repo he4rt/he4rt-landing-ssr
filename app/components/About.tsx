@@ -3,7 +3,7 @@ import Container from '~/components/Container';
 export default function About() {
   return (
     <Container>
-      <div className='md:row mb-14 md:mb-40 md:flex md:items-center'>
+      <div className='md:row mb-14 md:mb-40 md:flex md:items-center' id='about'>
         <img
           src='/images/question.png'
           alt='Imagem ilustrativa de uma pessoa pensando'

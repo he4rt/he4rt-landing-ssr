@@ -38,7 +38,10 @@ const UserCard = ({ avatar, username, occupation, twitter }: UserCardProps) => (
 export default function Staff() {
   return (
     <Container>
-      <h3 className='mb-2 text-2xl font-bold text-gray-700 md:text-center md:text-4xl'>
+      <h3
+        className='mb-2 text-2xl font-bold text-gray-700 md:text-center md:text-4xl'
+        id='staff'
+      >
         Com grandes <span className='text-purple-500'>poderes</span> vem grandes{' '}
         <span className='text-purple-500'>responsabilidades</span>
       </h3>
