@@ -9,6 +9,7 @@ import SectionRecords from '~/components/SectionRecords';
 import Staff from '~/components/Staff';
 import ForNoobs from '~/components/ForNoobs';
 import ContactBanner from '~/components/ContactBanner';
+import Navbar from '~/components/Navbar';
 
 import { fetchContributors } from '~/services/fetchContributors';
 import { useLoaderData } from '@remix-run/react';
@@ -36,6 +37,7 @@ export default function Index() {
 
   return (
     <>
+      <Navbar />
       <He4rt contributors={contributorsData} />
       <About />
       <ForNoobs />
