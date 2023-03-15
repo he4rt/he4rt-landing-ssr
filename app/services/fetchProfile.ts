@@ -19,10 +19,10 @@ export async function fetchProfile(userId: string): Promise<APPProfile> {
     .create({
       baseURL,
       headers: {
-        Authorization: apikey,
+        'X-He4rt-Authorization': apikey,
       },
     })
-    .get<APIProfile>(`/users/${userId}`)
+    .get<APIProfile>(`/api/users/profile/${userId}`)
     .then((data) => apiProfileToAppProfile(data.data))
     .catch((err) => {
       console.error(`Error while fetching ${userId}`);
