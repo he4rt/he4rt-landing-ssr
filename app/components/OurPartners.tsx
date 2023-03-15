@@ -4,11 +4,11 @@ import Container from '~/components/Container';
 export default function OurPartners() {
   return (
     <Container>
-      <div className='mx-auto mb-11 max-w-6xl text-center' id='partners'>
-        <h2 className='mb-2 font-spline text-4xl font-bold text-gray-700'>
+      <div className='max-w-6xl mx-auto text-center mb-11' id='partners'>
+        <h2 className='mb-2 text-4xl font-bold font-spline'>
           Nossos parceiros
         </h2>
-        <p className='text-gray-750'>
+        <p>
           Com o esforço de nossos parceiros estamos na missão de fazer o
           impossível. Juntos criamos soluções que mudará a maneira de aprender,
           garantindo oportunidade para todos. Faça parte dessa história, seja um

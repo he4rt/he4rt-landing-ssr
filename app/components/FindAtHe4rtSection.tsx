@@ -42,11 +42,11 @@ export default function FindAtHe4rt() {
     <>
       <Container>
         <div className='mb-10'>
-          <h2 className='text-2xl font-bold text-gray-700 md:text-4xl'>
+          <h2 className='text-2xl font-bold md:text-4xl'>
             O que eu encontrarei na{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h2>
-          <p className='mt-3 max-w-5xl font-dm text-[#737272]'>
+          <p className='max-w-5xl mt-3 font-dm'>
             Nós temos os recursos para levar qualquer ideia para frente, nenhum
             sonho é louco demais para nós. Descubra como desenvolver projetos
             que revolucionam a maneira de aprender.
@@ -65,7 +65,7 @@ export default function FindAtHe4rt() {
               alt='discord-print'
             />
             <div className='px-3 text-[#f3f3f3]'>
-              <h3 className='font-spline font-semibold'>
+              <h3 className='font-semibold font-spline'>
                 Venha participar do nosso Discord
               </h3>
               <p className='mt-3 mb-5 max-w-[584px] font-dm'>
