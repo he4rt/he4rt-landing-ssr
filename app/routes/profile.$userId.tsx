@@ -25,8 +25,8 @@ export default function Profile() {
   const data = useLoaderData<LoaderType>();
 
   return (
-    <div className='h-screen w-screen bg-gray-50 font-dm'>
-      <div className='relative mx-auto h-full w-full max-w-screen-lg bg-white shadow-sm'>
+    <div className='h-screen w-screen bg-gray-50 font-dm dark:bg-[#272727]'>
+      <div className='relative mx-auto h-full w-full max-w-screen-lg shadow-sm dark:bg-[#101010]'>
         <ProfileBackground />
         <div className='relative px-8'>
           <ProfilePicture {...data} />
