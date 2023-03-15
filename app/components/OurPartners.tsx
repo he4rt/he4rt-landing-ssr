@@ -4,8 +4,8 @@ import Container from '~/components/Container';
 export default function OurPartners() {
   return (
     <Container>
-      <div className='max-w-6xl mx-auto text-center mb-11' id='partners'>
-        <h2 className='mb-2 text-4xl font-bold font-spline'>
+      <div className='mx-auto mb-11 max-w-6xl text-center' id='partners'>
+        <h2 className='mb-2 font-spline text-4xl font-bold'>
           Nossos parceiros
         </h2>
         <p>

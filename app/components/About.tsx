@@ -10,11 +10,11 @@ export default function About() {
           className='mb-4 md:mr-8'
         />
         <div className='flex flex-col'>
-          <h2 className='mb-4 text-2xl font-bold font-spline md:mb-2 md:text-4xl'>
+          <h2 className='mb-4 font-spline text-2xl font-bold md:mb-2 md:text-4xl'>
             Afinal, o que é a{' '}
             <span className='text-purple-500'>He4rt Developers?</span>
           </h2>
-          <p className='text-lg font-medium mb-9 font-dm'>
+          <p className='mb-9 font-dm text-lg font-medium'>
             Temos como filosofia o ensino, tecnologia e as pessoas.{' '}
             <span className='text-purple-500'>
               Acreditamos que quando alinhados conseguimos mudar o mundo
@@ -25,11 +25,11 @@ export default function About() {
               Ajude a moldar nossa comunidade: faça parte dela.
             </span>
           </p>
-          <h3 className='mb-2 text-xl font-bold font-spline md:text-2xl'>
+          <h3 className='mb-2 font-spline text-xl font-bold md:text-2xl'>
             Como posso me juntar a{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h3>
-          <p className='text-lg font-medium font-dm'>
+          <p className='font-dm text-lg font-medium'>
             Faça parte do nosso{' '}
             <a
               href='https://discord.gg/he4rt'

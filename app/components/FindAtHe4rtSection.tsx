@@ -46,7 +46,7 @@ export default function FindAtHe4rt() {
             O que eu encontrarei na{' '}
             <span className='text-purple-500'>He4rt?</span>
           </h2>
-          <p className='max-w-5xl mt-3 font-dm'>
+          <p className='mt-3 max-w-5xl font-dm'>
             Nós temos os recursos para levar qualquer ideia para frente, nenhum
             sonho é louco demais para nós. Descubra como desenvolver projetos
             que revolucionam a maneira de aprender.
@@ -65,7 +65,7 @@ export default function FindAtHe4rt() {
               alt='discord-print'
             />
             <div className='px-3 text-[#f3f3f3]'>
-              <h3 className='font-semibold font-spline'>
+              <h3 className='font-spline font-semibold'>
                 Venha participar do nosso Discord
               </h3>
               <p className='mt-3 mb-5 max-w-[584px] font-dm'>

@@ -1,12 +1,12 @@
 html {
   --text-colour: #424141;
-  --background-colour: #FFFFFF;
+  --background-colour: #ffffff;
 
   color: var(--text-colour);
   background-color: var(--background-colour);
 }
 
 html.dark {
-  --text-colour: #FFFFFF;
+  --text-colour: #ffffff;
   --background-colour: #272727;
-} 
+}

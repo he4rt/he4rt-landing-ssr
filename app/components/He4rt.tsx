@@ -18,7 +18,7 @@ export default function He4rt({
         id='init'
       >
         <div className='flex w-full flex-col lg:w-1/2 lg:max-w-[544px]'>
-          <h1 className='text-2xl font-bold font-spline md:text-4xl'>
+          <h1 className='font-spline text-2xl font-bold md:text-4xl'>
             Feito pela{' '}
             <span className='text-purple-500 dark:text-purple-700'>
               comunidade{' '}
@@ -28,7 +28,7 @@ export default function He4rt({
               comunidade
             </span>
           </h1>
-          <p className='w-full mt-4 text-base md:text-xl'>
+          <p className='mt-4 w-full text-base md:text-xl'>
             Aqui é o lugar aonde mentes extraordinárias se encontram com o
             objetivo de alcançar milhares de pessoas com o poder da tecnologia.{' '}
             <span className='font-semibold text-purple-500 dark:text-purple-700'>
@@ -41,13 +41,13 @@ export default function He4rt({
               href='https://discord.com/invite/5kwDQuv'
               target='_blank'
             >
-              <button className='px-4 py-2 font-bold text-purple-500 transition-all bg-transparent border-2 border-purple-500 rounded-lg hover:bg-purple-500 hover:text-white dark:border-purple-700 dark:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-gray-998'>
+              <button className='rounded-lg border-2 border-purple-500 bg-transparent px-4 py-2 font-bold text-purple-500 transition-all hover:bg-purple-500 hover:text-white dark:border-purple-700 dark:text-purple-700 dark:hover:bg-purple-700 dark:hover:text-gray-998'>
                 Seja um membro
               </button>
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-full lg:w-1/2'>
+        <div className='flex w-full flex-col lg:w-1/2'>
           <Projects contributors={contributors} />
         </div>
       </header>

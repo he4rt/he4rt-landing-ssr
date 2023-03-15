@@ -1,6 +1,6 @@
 import { BsSun, BsFillMoonFill } from 'react-icons/bs';
 
-import { useTheme, Theme } from '~/providers/theme-provider';
+import { useTheme, Theme } from '~/utils/theme-provider';
 
 export default function ToggleTheme() {
   const [theme, setTheme] = useTheme();
@@ -13,7 +13,7 @@ export default function ToggleTheme() {
   if (theme === Theme.DARK) {
     return (
       <BsSun
-        className='text-white cursor-pointer'
+        className='cursor-pointer text-white'
         size={24}
         onClick={toggleTheme}
       />
@@ -22,7 +22,7 @@ export default function ToggleTheme() {
 
   return (
     <BsFillMoonFill
-      className='text-white cursor-pointer'
+      className='cursor-pointer text-white'
       size={24}
       onClick={toggleTheme}
     />

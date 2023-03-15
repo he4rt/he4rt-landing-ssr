@@ -39,7 +39,7 @@ const links: AnchorLinkProps[] = [
 const AnchorLink = ({ to, children }: AnchorLinkProps) => (
   <a
     href={to}
-    className='text-base font-bold text-white transition duration-300 ease-in-out delay-150 font-dm hover:-translate-y-1 hover:scale-110 hover:underline hover:underline-offset-8'
+    className='font-dm text-base font-bold text-white transition delay-150 duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline hover:underline-offset-8'
   >
     {children}
   </a>
@@ -58,24 +58,24 @@ const MobileNavbar = () => {
     return (
       <AiOutlineMenu
         size={25}
-        className='absolute z-10 m-5 text-purple-700 cursor-pointer'
+        className='absolute z-10 m-5 cursor-pointer text-purple-700'
         onClick={toggleMenu}
       />
     );
   }
 
   return (
-    <div className='w-full h-full p-5 bg-purple-700'>
+    <div className='h-full w-full bg-purple-700 p-5'>
       <div className='flex justify-between'>
         <AiOutlineClose
-          className='mb-6 text-white cursor-pointer'
+          className='mb-6 cursor-pointer text-white'
           size={25}
           onClick={toggleMenu}
         />
         <ToggleTheme />
       </div>
 
-      <div className='flex flex-col justify-around h-full'>
+      <div className='flex h-full flex-col justify-around'>
         <div className='flex flex-col gap-5'>
           {links.map((props) => (
             <AnchorLink key={`key-link-${props.to}`} {...props} />
@@ -83,10 +83,10 @@ const MobileNavbar = () => {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <p className='text-xl font-bold text-white font-dm'>
+          <p className='font-dm text-xl font-bold text-white'>
             Conheça a He4rt Devs
           </p>
-          <p className='text-base font-normal text-white font-dm'>
+          <p className='font-dm text-base font-normal text-white'>
             Faça parte do nosso Discord e venha aprender com diversos projetos e
             cursos feitos pela comunidade.
           </p>
@@ -94,7 +94,7 @@ const MobileNavbar = () => {
           <a
             href='/'
             target='_blank'
-            className='px-4 py-2 text-base font-bold text-purple-500 bg-white rounded-lg'
+            className='rounded-lg bg-white px-4 py-2 text-base font-bold text-purple-500'
           >
             Entrar em contato
           </a>
@@ -112,7 +112,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='flex justify-between w-full gap-5 py-6 bg-navbar px-28'>
+    <nav className='flex w-full justify-between gap-5 bg-navbar py-6 px-28'>
       <div className='flex gap-5'>
         {links.map((props) => (
           <AnchorLink key={`key-link-${props.to}`} {...props} />
