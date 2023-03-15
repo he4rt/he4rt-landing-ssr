@@ -1,6 +1,6 @@
 html {
-  --text-colour: black;
-  --background-colour: #737272;
+  --text-colour: #424141;
+  --background-colour: #FFFFFF;
 
   color: var(--text-colour);
   background-color: var(--background-colour);
