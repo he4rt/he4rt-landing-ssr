@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useMedia } from 'react-use';
 
+import ToggleTheme from './ToggleTheme';
+
 type AnchorLinkProps = {
   to: string;
   children: string;
@@ -37,7 +39,7 @@ const links: AnchorLinkProps[] = [
 const AnchorLink = ({ to, children }: AnchorLinkProps) => (
   <a
     href={to}
-    className='font-dm text-base font-bold text-white transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:underline hover:underline-offset-8'
+    className='text-base font-bold text-white transition duration-300 ease-in-out delay-150 font-dm hover:-translate-y-1 hover:scale-110 hover:underline hover:underline-offset-8'
   >
     {children}
   </a>
@@ -45,6 +47,7 @@ const AnchorLink = ({ to, children }: AnchorLinkProps) => (
 
 const MobileNavbar = () => {
   const [open, setOpen] = useState(false);
+
   const toggleMenu = () => setOpen((prev) => !prev);
 
   useEffect(() => {
@@ -55,21 +58,24 @@ const MobileNavbar = () => {
     return (
       <AiOutlineMenu
         size={25}
-        className='absolute z-10 m-5 cursor-pointer text-purple-700'
+        className='absolute z-10 m-5 text-purple-700 cursor-pointer'
         onClick={toggleMenu}
       />
     );
   }
 
   return (
-    <div className='h-full w-full bg-purple-700 p-5'>
-      <AiOutlineClose
-        className='mb-6 cursor-pointer text-white'
-        size={25}
-        onClick={toggleMenu}
-      />
+    <div className='w-full h-full p-5 bg-purple-700'>
+      <div className='flex justify-between'>
+        <AiOutlineClose
+          className='mb-6 text-white cursor-pointer'
+          size={25}
+          onClick={toggleMenu}
+        />
+        <ToggleTheme />
+      </div>
 
-      <div className='flex h-full flex-col justify-around'>
+      <div className='flex flex-col justify-around h-full'>
         <div className='flex flex-col gap-5'>
           {links.map((props) => (
             <AnchorLink key={`key-link-${props.to}`} {...props} />
@@ -77,17 +83,17 @@ const MobileNavbar = () => {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <p className='font-dm text-xl font-bold text-white'>
+          <p className='text-xl font-bold text-white font-dm'>
             Conheça a He4rt Devs
           </p>
-          <p className='font-dm text-base font-normal text-white'>
+          <p className='text-base font-normal text-white font-dm'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           {/* TODO adicionar link do discord */}
           <a
             href='/'
             target='_blank'
-            className='rounded-lg bg-white px-4 py-2 text-base font-bold text-purple-500'
+            className='px-4 py-2 text-base font-bold text-purple-500 bg-white rounded-lg'
           >
             Entrar em contato
           </a>
@@ -105,10 +111,14 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='flex w-full gap-5 bg-navbar py-6 pl-28'>
-      {links.map((props) => (
-        <AnchorLink key={`key-link-${props.to}`} {...props} />
-      ))}
+    <nav className='flex justify-between w-full gap-5 py-6 bg-navbar px-28'>
+      <div className='flex gap-5'>
+        {links.map((props) => (
+          <AnchorLink key={`key-link-${props.to}`} {...props} />
+        ))}
+      </div>
+
+      <ToggleTheme />
     </nav>
   );
 }
