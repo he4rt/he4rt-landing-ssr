@@ -1,4 +1,8 @@
-import type { LinksFunction, MetaFunction } from '@remix-run/node';
+import type {
+  LinksFunction,
+  LoaderFunction,
+  MetaFunction,
+} from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -6,10 +10,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from '@remix-run/react';
 import clsx from 'clsx';
 
-import { ThemeProvider, useTheme } from '~/providers/theme-provider';
+import type { Theme } from '~/utils/theme-provider';
+import {
+  NonFlashOfWrongThemeEls,
+  ThemeProvider,
+  useTheme,
+} from '~/utils/theme-provider';
+import { getThemeSession } from './utils/theme.server';
 
 import styles from '~/tailwind.css';
 import mainStyles from '../styles/styles.css';
@@ -44,14 +55,30 @@ export const links: LinksFunction = () => [
   },
 ];
 
+export type LoaderData = {
+  theme: Theme | null;
+};
+
+export const loader: LoaderFunction = async ({ request }) => {
+  const themeSession = await getThemeSession(request);
+
+  const data: LoaderData = {
+    theme: themeSession.getTheme(),
+  };
+
+  return data;
+};
+
 function App() {
   const [theme] = useTheme();
+  const data = useLoaderData<LoaderData>();
 
   return (
     <html lang='pt-BR' className={clsx(theme)}>
       <head>
         <Meta />
         <Links />
+        <NonFlashOfWrongThemeEls ssrTheme={Boolean(data.theme)} />
       </head>
       <body className='h-screen overflow-x-hidden'>
         <Outlet />
@@ -64,8 +91,10 @@ function App() {
 }
 
 export default function AppWithProviders() {
+  const data = useLoaderData<LoaderData>();
+
   return (
-    <ThemeProvider>
+    <ThemeProvider specifiedTheme={data.theme}>
       <App />
     </ThemeProvider>
   );
