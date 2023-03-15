@@ -19,12 +19,14 @@ export default function ProfileStats({ count, name, type }: ProfileStatsProps) {
 
   return (
     <div className='flex items-center space-x-3'>
-      <div className='rounded-full bg-white p-4 shadow-md'>
+      <div className='rounded-full bg-white p-4 shadow-md dark:bg-[#151515]'>
         <TypeIcon />
       </div>
       <div className='flex flex-col items-start'>
-        <span className='text-xl font-bold text-gray-900'>{count}</span>
-        <span className='text-base text-gray-600'>{name}</span>
+        <span className='text-xl font-bold'>{count}</span>
+        <span className='text-base text-gray-600 dark:text-gray-650'>
+          {name}
+        </span>
       </div>
     </div>
   );

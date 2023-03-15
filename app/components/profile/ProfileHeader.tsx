@@ -34,7 +34,7 @@ export default function ProfileHeader(props: ProfileHeaderProps) {
           name='Ranking atual'
         />
       </div>
-      <hr className='my-8 w-full border border-[#F2E9FF]' />
+      <hr className='my-8 w-full border border-[#F2E9FF] dark:border-[#393939]' />
     </section>
   );
 }

@@ -4,13 +4,14 @@ import ProfileSeasonBadge from './ProfileSeasonBadge';
 
 type ProfilePictureProps = Pick<
   APPProfile,
-  'nickname' | 'level' | 'profilePicture' | 'seasonInfo'
+  'nickname' | 'level' | 'profilePicture' | 'seasonInfo' | 'experience'
 >;
 
 export default function ProfilePicture({
   profilePicture,
   nickname,
   level,
+  experience,
   ...seasonInfo
 }: ProfilePictureProps) {
   return (
@@ -19,7 +20,7 @@ export default function ProfilePicture({
         <ProfileProgressBar
           imageSrc={profilePicture}
           imageAlt={`Foto de ${nickname}`}
-          percentage={70}
+          percentage={experience}
         />
 
         <div className='absolute -bottom-2 inline-block rounded-lg bg-gray-50 px-3 py-1 font-bold text-purple-500'>

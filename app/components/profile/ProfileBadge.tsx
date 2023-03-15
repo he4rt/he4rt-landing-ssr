@@ -6,7 +6,7 @@ export default function ProfileBadge({ badgeInfo }: ProfileBadgeProps) {
   return (
     <section className='my-8 flex flex-col space-y-3'>
       <h1 className='font-spline text-base font-bold'>🏆 Conquistas</h1>
-      <p className='font-dm text-base font-normal text-gray-775'>
+      <p className='font-dm text-base font-normal text-gray-775 dark:text-gray-650'>
         Seção de conquistas referentes à gameficação do servidor e eventos
         externos.
       </p>
@@ -24,7 +24,7 @@ export default function ProfileBadge({ badgeInfo }: ProfileBadgeProps) {
             />
             <div className='flex flex-col'>
               <p className='font-sans text-base font-bold'>{name}</p>
-              <span className='font-dm text-sm font-normal text-gray-775'>
+              <span className='font-dm text-sm font-normal text-gray-775 dark:text-[#858A9B]'>
                 {description}
               </span>
             </div>
