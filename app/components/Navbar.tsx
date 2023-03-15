@@ -87,7 +87,8 @@ const MobileNavbar = () => {
             Conheça a He4rt Devs
           </p>
           <p className='text-base font-normal text-white font-dm'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Faça parte do nosso Discord e venha aprender com diversos projetos e
+            cursos feitos pela comunidade.
           </p>
           {/* TODO adicionar link do discord */}
           <a
