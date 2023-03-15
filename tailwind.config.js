@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         '4noobs-pattern':
           'linear-gradient(270deg, #792CF2 50%, rgba(121, 44, 242, 0) 100%), url(/images/4noobs-bg.png)',
-        'navbar': 'linear-gradient(10deg, #782BF1, #A62BF1 100%)'
+        navbar: 'linear-gradient(10deg, #782BF1, #A62BF1 100%)',
       },
       colors: {
         purple: {
