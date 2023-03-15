@@ -1,6 +1,6 @@
 import axios from 'axios';
 import type { APIContributors, APPContributors } from '~/types/contributors';
-import { apiContributorsToAppContributors } from '~/utils';
+import { apiContributorsToAppContributors } from '~/utils/api';
 
 const contributorsURL = process.env.GITHUB_CONTRIBUTORS_URL;
 

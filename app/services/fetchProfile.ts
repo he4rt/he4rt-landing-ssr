@@ -1,6 +1,6 @@
 import axios from 'axios';
 import type { APIProfile, APPProfile } from '~/types/profile';
-import { apiProfileToAppProfile } from '~/utils';
+import { apiProfileToAppProfile } from '~/utils/api';
 import { notFound, serverError } from 'remix-utils';
 
 const baseURL = process.env.BASE_URL;
