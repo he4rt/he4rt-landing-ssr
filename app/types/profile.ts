@@ -1,30 +1,35 @@
-interface Season {
-  id: number;
+interface UserInfo {
+  id: string;
+  user_id: string;
   name: string;
-  description: string;
-  starts_at: string;
-  ends_at: string;
-  created_at: string;
-  updated_at: string;
-  participants_count: number;
-  messages_count: number;
-  badges_count: number;
-  meetings_count: number;
+  nickname: string;
+  linkedin_url: string;
+  github_url: string;
+  birthdate: string | null;
+  about: string;
 }
 
-interface SeasonInfo {
-  id: number;
-  user_id: number;
-  season_id: number;
+interface CharacterInfo {
+  user_id: string;
+  reputation: number;
   level: number;
-  messages_count: number;
+  experience: number;
+  daily_bonus_claimed_at: {
+    date: string;
+    timezone_type: number;
+    timezone: string;
+  };
+}
+
+interface ProvidersInfo {
+  id: string;
+  user_id: string;
+  provider: string;
+  provider_id: string;
+  email: string | null;
   created_at: string;
   updated_at: string;
-  meetings_count: number;
-  badges_count: number;
-  experience: number;
-  ranking_position: number;
-  season: Season;
+  messages_count: number;
 }
 
 interface BadgeInfo {
@@ -42,38 +47,35 @@ interface BadgeInfo {
   };
 }
 
-export interface APIProfile {
-  id: number;
-  discord_id: number;
-  discord_avatar_url?: string;
-  twitch_id: unknown;
-  email: string;
-  name: string;
-  nickname: string;
-  git: string;
-  linkedin: string;
-  about: string;
-  level: number;
-  current_exp: number;
-  money: string;
-  daily: string;
-  is_donator: boolean;
-  created_at: string;
-  updated_at: string;
-  uf: string | null;
+interface SeasonInfo {
+  id: string;
+  season_id: string;
+  character_id: string;
   ranking_position: number;
-  badges_count: number;
+  experience: number;
   messages_count: number;
-  season_info?: SeasonInfo[];
-  badges?: BadgeInfo[];
+  badges_count: number;
+  meetings_count: number;
+}
+
+export interface APIProfile {
+  information: UserInfo;
+  address: {
+    country: null;
+    state: 'SP';
+  };
+  character: CharacterInfo;
+  connectedProviders: ProvidersInfo[];
+  badges: BadgeInfo[];
+  pastSeasons: SeasonInfo[];
 }
 
 export interface APPProfile {
-  level: APIProfile['level'];
+  level: CharacterInfo['level'];
 
   seasonInfo?: {
     rankingPosition?: SeasonInfo['ranking_position'];
-    seasonName?: SeasonInfo['season']['name'];
+    seasonName?: SeasonInfo['id'];
   };
 
   badgeInfo?: {
@@ -83,15 +85,14 @@ export interface APPProfile {
     badgePicture: BadgeInfo['image_url'];
   }[];
 
-  name: APIProfile['name'];
-  nickname: APIProfile['nickname'];
-  git: APIProfile['git'];
-  linkedin: APIProfile['linkedin'];
-  messagesCount: APIProfile['messages_count'];
-  badgesCount: APIProfile['badges_count'];
-  rankingPosition: APIProfile['ranking_position'];
-  about: APIProfile['about'];
-
-  // TODO find a way to get user profile pic
+  experience: CharacterInfo['experience'];
+  name: UserInfo['name'];
+  nickname: UserInfo['nickname'];
+  git: UserInfo['github_url'];
+  linkedin: UserInfo['linkedin_url'];
+  messagesCount: ProvidersInfo['messages_count'];
+  badgesCount: SeasonInfo['badges_count'];
+  rankingPosition: SeasonInfo['ranking_position'];
+  about: UserInfo['about'];
   profilePicture: string;
 }

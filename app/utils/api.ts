@@ -2,23 +2,26 @@ import type { APIProfile, APPProfile } from '~/types/profile';
 import type { Course, APPContributors } from '~/types/contributors';
 
 export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
-  level: apiProfile.level,
-  name: apiProfile.name,
-  nickname: apiProfile.nickname,
-  git: apiProfile.git,
-  linkedin: apiProfile.linkedin,
-  messagesCount: apiProfile.messages_count,
-  badgesCount: apiProfile.badges_count,
-  rankingPosition: apiProfile.ranking_position,
-  about: apiProfile.about,
-  profilePicture:
-    apiProfile.discord_avatar_url ??
-    `https://ui-avatars.com/api/?name=${encodeURIComponent(
-      apiProfile.nickname,
-    )}`,
+  level: apiProfile.character.level,
+  name: apiProfile.information.name,
+  nickname: apiProfile.information.nickname,
+  git: apiProfile.information.github_url,
+  linkedin: apiProfile.information.linkedin_url,
+  experience: apiProfile.character.experience,
+  messagesCount:
+    apiProfile.connectedProviders.find((provider) =>
+      provider.provider.includes('discord'),
+    )?.messages_count || 0,
+  badgesCount: apiProfile.badges.length,
+  rankingPosition: apiProfile.pastSeasons[0].ranking_position,
+  about: apiProfile.information.about,
+  // TODO FIX PROFILE PICTURE
+  profilePicture: `https://ui-avatars.com/api/?name=${encodeURIComponent(
+    apiProfile.information.nickname,
+  )}`,
   seasonInfo: {
-    rankingPosition: apiProfile.season_info?.[0]?.ranking_position,
-    seasonName: apiProfile.season_info?.[0]?.season.name,
+    rankingPosition: apiProfile.pastSeasons?.[0]?.ranking_position,
+    seasonName: apiProfile.pastSeasons?.[0]?.season_id,
   },
   badgeInfo: apiProfile.badges?.map((badge) => ({
     id: badge.id,
