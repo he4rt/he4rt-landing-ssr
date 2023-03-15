@@ -7,8 +7,12 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
+import clsx from 'clsx';
+
+import { ThemeProvider, useTheme } from '~/providers/theme-provider';
 
 import styles from '~/tailwind.css';
+import mainStyles from '../styles/styles.css';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
@@ -34,11 +38,17 @@ export const links: LinksFunction = () => [
     href: '/images/brands/heart.svg',
     type: 'image/svg',
   },
+  {
+    rel: 'stylesheet',
+    href: mainStyles,
+  },
 ];
 
-export default function App() {
+function App() {
+  const [theme] = useTheme();
+
   return (
-    <html lang='pt-BR'>
+    <html lang='pt-BR' className={clsx(theme)}>
       <head>
         <Meta />
         <Links />
@@ -50,5 +60,13 @@ export default function App() {
         <LiveReload />
       </body>
     </html>
+  );
+}
+
+export default function AppWithProviders() {
+  return (
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   );
 }
