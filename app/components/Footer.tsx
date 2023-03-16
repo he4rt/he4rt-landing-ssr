@@ -16,7 +16,7 @@ type LinkProps = Pick<
 
 const anchorLinks: Omit<LinkProps, 'isIcon'>[] = [
   {
-    href: '#inicio',
+    href: '#init',
     children: 'Início',
   },
   {
@@ -24,7 +24,7 @@ const anchorLinks: Omit<LinkProps, 'isIcon'>[] = [
     children: '4Noobs',
   },
   {
-    href: '#sobre',
+    href: '#about',
     children: 'Sobre',
   },
 ];

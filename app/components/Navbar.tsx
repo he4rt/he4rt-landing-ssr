@@ -90,9 +90,9 @@ const MobileNavbar = () => {
             Faça parte do nosso Discord e venha aprender com diversos projetos e
             cursos feitos pela comunidade.
           </p>
-          {/* TODO adicionar link do discord */}
           <a
-            href='/'
+            href='https://discord.com/invite/5kwDQuv'
+            rel='noopener noreferrer'
             target='_blank'
             className='rounded-lg bg-white px-4 py-2 text-base font-bold text-purple-500'
           >

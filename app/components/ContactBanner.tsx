@@ -15,11 +15,11 @@ export default function ContactBanner() {
               seus objetivos.
             </h2>
           </div>
-          {/* TODO adicionar link do discord */}
           <a
-            href='/'
+            rel='noopener noreferrer'
+            href='https://twitter.com/He4rtDevs'
             target='_blank'
-            className='mt-8 rounded-lg bg-white py-2 px-4 text-base font-bold text-purple-500 md:mt-0'
+            className='mt-8 rounded-lg bg-white px-4 py-2 text-base font-bold text-purple-500 md:mt-0'
           >
             Entrar em contato
           </a>
