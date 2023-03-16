@@ -4,6 +4,7 @@ html {
 
   color: var(--text-colour);
   background-color: var(--background-colour);
+  scroll-behavior: smooth;
 }
 
 html.dark {
