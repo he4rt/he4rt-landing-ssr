@@ -1,5 +1,17 @@
+import type { PartnerCardProps } from './PartnerCard';
 import PartnerCard from './PartnerCard';
 import Container from '~/components/Container';
+
+const partners: PartnerCardProps[] = [
+  {
+    name: 'Sinergicon',
+    specialty: 'Consultoria Financeira',
+    contact: 'https://www.sinergicon.com.br',
+    description:
+      'Temos o propósito de trabalhar em Sinergia com nossos clientes, mais do que prestadores de serviços, a nossa missão é se tornar um parceiro de negócios e estar o mais próximo possível.',
+    logo: '/images/partner-picture.png',
+  },
+];
 
 export default function OurPartners() {
   return (
@@ -16,8 +28,9 @@ export default function OurPartners() {
         </p>
       </div>
       <div className='flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-10 lg:gap-20'>
-        <PartnerCard />
-        <PartnerCard />
+        {partners.map((partner) => (
+          <PartnerCard {...partner} key={`partner-key-${partner.name}`} />
+        ))}
       </div>
     </Container>
   );

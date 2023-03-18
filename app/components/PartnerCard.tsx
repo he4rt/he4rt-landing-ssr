@@ -1,24 +1,38 @@
-export default function PartnerCard() {
+export type PartnerCardProps = {
+  name: string;
+  specialty: string;
+  description: string;
+  contact: string;
+  logo: string;
+};
+
+export default function PartnerCard({
+  name,
+  specialty,
+  description,
+  contact,
+  logo,
+}: PartnerCardProps) {
   return (
     <>
       <div className='flex gap-4 p-12 shadow-xl'>
-        <img
-          className='h-10 w-10'
-          alt='partnerpicture'
-          src='/images/partner-picture.png'
-        />
+        <img className='h-10 w-10' alt='partnerpicture' src={logo} />
         <div>
           <div className='flex flex-col items-center justify-between md:flex-row'>
-            <h3 className='font-spline text-xl font-bold'>Sinergicon</h3>
-            <span className='dark:text-white/80'>Contadora</span>
+            <h3 className='font-spline text-xl font-bold'>{name}</h3>
+            <span className='dark:text-white/80'>{specialty}</span>
           </div>
           <p className='mt-2 mb-4 font-dm font-normal dark:text-white/80'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            viverra lorem eget luctus iaculis.
+            {description}
           </p>
-          <button className='w-full rounded-lg bg-purple-500 py-2 text-white'>
+          <a
+            rel='noreferrer noopener'
+            target='_blank'
+            href={contact}
+            className='block w-full rounded-lg bg-purple-500 p-2 text-center text-white'
+          >
             Entrar em contato
-          </button>
+          </a>
         </div>
       </div>
     </>
