@@ -14,6 +14,7 @@ interface CharacterInfo {
   reputation: number;
   level: number;
   experience: number;
+  percentage_experience: number;
   daily_bonus_claimed_at: {
     date: string;
     timezone_type: number;
@@ -85,7 +86,7 @@ export interface APPProfile {
     badgePicture: BadgeInfo['image_url'];
   }[];
 
-  experience: CharacterInfo['experience'];
+  experience: CharacterInfo['percentage_experience'];
   name: UserInfo['name'];
   nickname: UserInfo['nickname'];
   git: UserInfo['github_url'];

@@ -7,7 +7,7 @@ export const apiProfileToAppProfile = (apiProfile: APIProfile): APPProfile => ({
   nickname: apiProfile.information.nickname,
   git: apiProfile.information.github_url,
   linkedin: apiProfile.information.linkedin_url,
-  experience: apiProfile.character.experience,
+  experience: apiProfile.character.percentage_experience,
   messagesCount:
     apiProfile.connectedProviders.find((provider) =>
       provider.provider.includes('discord'),
