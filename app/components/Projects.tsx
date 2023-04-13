@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import type { APPContributors } from '~/types/contributors';
 
 const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
+  const easyOut = 'cubic-bezier(0.165, 0.840, 0.440, 1.000)';
   const settings = {
     dots: false,
     infinite: true,
@@ -10,7 +11,7 @@ const Projects = ({ contributors }: { contributors: APPContributors[] }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 8000,
-    cssEase: 'linear',
+    cssEase: easyOut,
     responsive: [
       {
         breakpoint: 1024,
