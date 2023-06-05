@@ -14,16 +14,26 @@ export default function ProfileUsernameAndSocials({
   return (
     <div className='flex flex-col'>
       <div className='flex items-center space-x-4'>
-        <span className='font-spline text-xl font-bold'>{name}</span>
+        <span className='text-xl font-bold font-spline'>{name}</span>
         <span className='text-base font-bold text-gray-700 dark:text-white/70'>
           {nickname}
         </span>
       </div>
       <div className='mt-4 flex space-x-4 text-[#868686]'>
-        <a href={linkedin} target='_blank' rel='noreferrer'>
+        <a
+          href={linkedin}
+          target='_blank'
+          rel='noreferrer'
+          className='cursor-pointer'
+        >
           <LinkedinIcon />
         </a>
-        <a href={git} target='_blank' rel='noreferrer'>
+        <a
+          href={git}
+          target='_blank'
+          rel='noreferrer'
+          className='cursor-pointer'
+        >
           <GithubIcon />
         </a>
       </div>

@@ -26,12 +26,6 @@ export const users: UserCardProps[] = [
     twitter: 'https://twitter.com/jujuvazzz',
   },
   {
-    username: 'Felipe Gabriel',
-    avatar: '/images/staff/7k.png',
-    occupation: 'Diretor de Operações ',
-    twitter: 'https://twitter.com/setekpro',
-  },
-  {
     username: 'Giovane Silva',
     avatar: '/images/staff/novout.png',
     occupation: 'Contribuidor Principal',
@@ -54,12 +48,6 @@ export const users: UserCardProps[] = [
     avatar: '/images/staff/nextur.png',
     occupation: 'UI/UX Designer',
     twitter: 'https://twitter.com/nexturhe4rt',
-  },
-  {
-    username: 'Gabriel Mazieri',
-    avatar: '/images/staff/grande.png',
-    occupation: 'Community Manager',
-    twitter: 'https://twitter.com/grandehe4rt',
   },
   {
     username: 'Yasmin Felício',
