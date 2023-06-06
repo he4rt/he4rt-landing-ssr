@@ -1,22 +1,20 @@
-import type { APPProfile } from '~/types/profile';
+import type { BadgeInfo } from '~/types/profile';
 
-type ProfileBadgeProps = Pick<APPProfile, 'badgeInfo'>;
-
-export default function ProfileBadge({ badgeInfo }: ProfileBadgeProps) {
+export default function ProfileBadge({ badges }: { badges: BadgeInfo[] }) {
   return (
-    <section className='my-8 flex flex-col space-y-3'>
-      <h1 className='font-spline text-base font-bold'>🏆 Conquistas</h1>
-      <p className='font-dm text-base font-normal text-gray-775 dark:text-gray-650'>
+    <section className='flex flex-col my-8 space-y-3'>
+      <h1 className='text-base font-bold font-spline'>🏆 Conquistas</h1>
+      <p className='text-base font-normal font-dm text-gray-775 dark:text-gray-650'>
         Seção de conquistas referentes à gameficação do servidor e eventos
         externos.
       </p>
       <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
-        {badgeInfo?.map(({ id, badgePicture, name, description }) => (
-          <div className='flex gap-6 rounded-xl p-4 shadow-md' key={id}>
+        {badges?.map(({ name, description, image_url, role_id }) => (
+          <div className='flex gap-6 p-4 shadow-md rounded-xl' key={role_id}>
             <img
-              src={badgePicture}
+              src={image_url ? image_url : '/images/default-badge.png'}
               alt={`Imagem da consquista ${name}`}
-              className='h-8 w-8 rounded-lg'
+              className='w-8 h-8 rounded-lg'
               onError={({ currentTarget }) => {
                 currentTarget.onerror = null;
                 currentTarget.src = '/images/default-badge.png';

@@ -33,19 +33,12 @@ interface ProvidersInfo {
   messages_count: number;
 }
 
-interface BadgeInfo {
-  id: number;
+export interface BadgeInfo {
   name: string;
   description: string;
-  redeem_code: string;
+  role_id: string;
+  users_id: string[];
   image_url: string;
-  active: boolean;
-  created_at: string;
-  updated_at: string;
-  pivot: {
-    user_id: number;
-    badge_id: number;
-  };
 }
 
 interface SeasonInfo {
@@ -78,13 +71,6 @@ export interface APPProfile {
     rankingPosition?: SeasonInfo['ranking_position'];
     seasonName?: SeasonInfo['id'];
   };
-
-  badgeInfo?: {
-    id: BadgeInfo['id'];
-    name: BadgeInfo['name'];
-    description: BadgeInfo['description'];
-    badgePicture: BadgeInfo['image_url'];
-  }[];
 
   experience: CharacterInfo['percentage_experience'];
   name: UserInfo['name'];
