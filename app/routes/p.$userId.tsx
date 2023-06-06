@@ -1,11 +1,12 @@
 import type { LoaderArgs } from '@remix-run/node';
-import { badRequest } from 'remix-utils';
 import { useLoaderData } from '@remix-run/react';
+import { badRequest } from 'remix-utils';
+import { fetchMedals } from '~/services/fetchMedals';
 import { fetchProfile } from '~/services/fetchProfile';
 
-import ProfileBadge from '~/components/profile/ProfileBadge';
 import ProfileAboutMe from '~/components/profile/ProfileAboutMe';
 import ProfileBackground from '~/components/profile/ProfileBackground';
+import ProfileBadge from '~/components/profile/ProfileBadge';
 import ProfileHeader from '~/components/profile/ProfileHeader';
 import ProfilePicture from '~/components/profile/ProfilePicture';
 
@@ -16,23 +17,26 @@ export const loader = async ({ params }: LoaderArgs) => {
     throw badRequest({ message: 'No user id provided' });
   }
 
-  return await fetchProfile(userId);
+  return {
+    profile: await fetchProfile(userId),
+    medals: await fetchMedals(userId),
+  };
 };
 
 type LoaderType = typeof loader;
 
 export default function Profile() {
-  const data = useLoaderData<LoaderType>();
+  const { profile, medals } = useLoaderData<LoaderType>();
 
   return (
     <div className='h-screen w-screen bg-gray-50 font-dm dark:bg-[#272727]'>
       <div className='relative mx-auto h-full w-full max-w-screen-lg shadow-sm dark:bg-[#101010]'>
         <ProfileBackground />
         <div className='relative px-8'>
-          <ProfilePicture {...data} />
-          <ProfileHeader {...data} />
-          <ProfileAboutMe description={data.about} />
-          <ProfileBadge badgeInfo={data.badgeInfo} />
+          <ProfilePicture {...profile} />
+          <ProfileHeader {...profile} />
+          <ProfileAboutMe description={profile.about} />
+          <ProfileBadge badges={medals} />
         </div>
       </div>
     </div>
