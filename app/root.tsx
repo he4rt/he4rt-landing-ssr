@@ -27,8 +27,24 @@ import mainStyles from '../styles/styles.css';
 
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'He4rt Developers',
   viewport: 'width=device-width,initial-scale=1',
+  title: 'He4rt Developers',
+  description: 'Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que saíram do zero e passaram para o intermediário/avançado.',
+  'twitter:card': 'summary_large_image',
+  'twitter:site': '@He4rtDevs',
+  'twitter:creator': '@He4rtDevs',
+  'twitter:title': 'He4rt Developers',
+  'twitter:description': 'Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que saíram do zero e passaram para o intermediário/avançado.',
+  'twitter:image': '/images/banner-meta.png',
+  'twitter:image:alt': 'He4rt Developers banner logo imagem',
+
+  'og:title': 'He4rt Developers',
+  'og:description': 'Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que saíram do zero e passaram para o intermediário/avançado.',
+  'og:image': '/images/banner-meta.png',
+  'og:image:alt': 'He4rt Developers banner logo imagem',
+  'og:url': 'https://heartdevs.com',
+  'og:site_name': 'He4rt Developers',
+
 });
 
 export const links: LinksFunction = () => [
@@ -46,7 +62,7 @@ export const links: LinksFunction = () => [
   },
   {
     rel: 'icon',
-    href: '/images/brands/heart.svg',
+    href: '/brands/heart.svg',
     type: 'image/svg',
   },
   {

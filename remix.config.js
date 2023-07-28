@@ -8,5 +8,6 @@ module.exports = {
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "api/index.js",
   // publicPath: "/build/",
+  tailwind: true,
   serverDependenciesToBundle: ['axios']
 };
