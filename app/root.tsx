@@ -25,10 +25,33 @@ import { getThemeSession } from './utils/theme.server';
 import styles from '~/tailwind.css';
 import mainStyles from '../styles/styles.css';
 
+const metaDescription =
+  'Uma comunidade de desenvolvedores ajudando os iniciantes do mundo da programação. A He4rt Developers já está formando várias mentes brilhantes que saíram do zero e passaram para o intermediário/avançado.';
+const metaCreator = "@He4rtDevs"
+const title = "He4rt Developers"
+const urlImage = "/images/banner-meta.png"
+const imageAlt = "Logo em formato de coração roxo representando a He4rt Developers"
+
 export const meta: MetaFunction = () => ({
   charset: 'utf-8',
-  title: 'He4rt Developers',
   viewport: 'width=device-width,initial-scale=1',
+  title: title,
+  description: metaDescription,
+  'twitter:card': 'summary_large_image',
+  'twitter:site': metaCreator,
+  'twitter:creator': metaCreator,
+  'twitter:title': title,
+  'twitter:description': metaDescription,
+  'twitter:image': urlImage,
+  'twitter:image:alt': imageAlt,
+
+  'og:title': title,
+  'og:description': metaDescription,
+  'og:image': urlImage,
+  'og:image:alt': imageAlt,
+  'og:url': 'https://heartdevs.com',
+  'og:site_name': title,
+
 });
 
 export const links: LinksFunction = () => [
@@ -46,7 +69,7 @@ export const links: LinksFunction = () => [
   },
   {
     rel: 'icon',
-    href: '/images/brands/heart.svg',
+    href: '/brands/heart.svg',
     type: 'image/svg',
   },
   {
